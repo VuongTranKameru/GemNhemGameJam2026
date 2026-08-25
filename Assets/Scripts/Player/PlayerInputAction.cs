@@ -120,18 +120,18 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""OpenMenu"",
+                    ""name"": ""Cook"",
                     ""type"": ""Button"",
-                    ""id"": ""7c79fdea-c0d6-4b31-87cc-b132950069b3"",
+                    ""id"": ""dad3058b-a124-4d66-b6ad-fbbd3eba8e39"",
                     ""expectedControlType"": """",
                     ""processors"": """",
-                    ""interactions"": """",
+                    ""interactions"": ""Hold"",
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""SwitchChar"",
+                    ""name"": ""OpenMenu"",
                     ""type"": ""Button"",
-                    ""id"": ""48bc6605-d5f4-443c-a8aa-6f544d080689"",
+                    ""id"": ""7c79fdea-c0d6-4b31-87cc-b132950069b3"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
@@ -229,12 +229,12 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""be3d8caa-2b99-4639-aa8b-7784cd5564d1"",
-                    ""path"": ""<Keyboard>/a"",
+                    ""id"": ""a1d8cf94-8f85-400b-89dd-aff0bf1c55b7"",
+                    ""path"": ""<Keyboard>/c"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""SwitchChar"",
+                    ""action"": ""Cook"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -642,8 +642,8 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         m_Main_Movement = m_Main.FindAction("Movement", throwIfNotFound: true);
         m_Main_Run = m_Main.FindAction("Run", throwIfNotFound: true);
         m_Main_Interact = m_Main.FindAction("Interact", throwIfNotFound: true);
+        m_Main_Cook = m_Main.FindAction("Cook", throwIfNotFound: true);
         m_Main_OpenMenu = m_Main.FindAction("OpenMenu", throwIfNotFound: true);
-        m_Main_SwitchChar = m_Main.FindAction("SwitchChar", throwIfNotFound: true);
         // General
         m_General = asset.FindActionMap("General", throwIfNotFound: true);
         m_General_Pause = m_General.FindAction("Pause", throwIfNotFound: true);
@@ -742,8 +742,8 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
     private readonly InputAction m_Main_Movement;
     private readonly InputAction m_Main_Run;
     private readonly InputAction m_Main_Interact;
+    private readonly InputAction m_Main_Cook;
     private readonly InputAction m_Main_OpenMenu;
-    private readonly InputAction m_Main_SwitchChar;
     /// <summary>
     /// Provides access to input actions defined in input action map "Main".
     /// </summary>
@@ -768,13 +768,13 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         /// </summary>
         public InputAction @Interact => m_Wrapper.m_Main_Interact;
         /// <summary>
+        /// Provides access to the underlying input action "Main/Cook".
+        /// </summary>
+        public InputAction @Cook => m_Wrapper.m_Main_Cook;
+        /// <summary>
         /// Provides access to the underlying input action "Main/OpenMenu".
         /// </summary>
         public InputAction @OpenMenu => m_Wrapper.m_Main_OpenMenu;
-        /// <summary>
-        /// Provides access to the underlying input action "Main/SwitchChar".
-        /// </summary>
-        public InputAction @SwitchChar => m_Wrapper.m_Main_SwitchChar;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -810,12 +810,12 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
             @Interact.started += instance.OnInteract;
             @Interact.performed += instance.OnInteract;
             @Interact.canceled += instance.OnInteract;
+            @Cook.started += instance.OnCook;
+            @Cook.performed += instance.OnCook;
+            @Cook.canceled += instance.OnCook;
             @OpenMenu.started += instance.OnOpenMenu;
             @OpenMenu.performed += instance.OnOpenMenu;
             @OpenMenu.canceled += instance.OnOpenMenu;
-            @SwitchChar.started += instance.OnSwitchChar;
-            @SwitchChar.performed += instance.OnSwitchChar;
-            @SwitchChar.canceled += instance.OnSwitchChar;
         }
 
         /// <summary>
@@ -836,12 +836,12 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
             @Interact.started -= instance.OnInteract;
             @Interact.performed -= instance.OnInteract;
             @Interact.canceled -= instance.OnInteract;
+            @Cook.started -= instance.OnCook;
+            @Cook.performed -= instance.OnCook;
+            @Cook.canceled -= instance.OnCook;
             @OpenMenu.started -= instance.OnOpenMenu;
             @OpenMenu.performed -= instance.OnOpenMenu;
             @OpenMenu.canceled -= instance.OnOpenMenu;
-            @SwitchChar.started -= instance.OnSwitchChar;
-            @SwitchChar.performed -= instance.OnSwitchChar;
-            @SwitchChar.canceled -= instance.OnSwitchChar;
         }
 
         /// <summary>
@@ -1173,19 +1173,19 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnInteract(InputAction.CallbackContext context);
         /// <summary>
+        /// Method invoked when associated input action "Cook" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnCook(InputAction.CallbackContext context);
+        /// <summary>
         /// Method invoked when associated input action "OpenMenu" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnOpenMenu(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "SwitchChar" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnSwitchChar(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "General" which allows adding and removing callbacks.
