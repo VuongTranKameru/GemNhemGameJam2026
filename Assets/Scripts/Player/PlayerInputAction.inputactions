@@ -34,18 +34,18 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "OpenMenu",
+                    "name": "Cook",
                     "type": "Button",
-                    "id": "7c79fdea-c0d6-4b31-87cc-b132950069b3",
+                    "id": "dad3058b-a124-4d66-b6ad-fbbd3eba8e39",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Hold",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "SwitchChar",
+                    "name": "OpenMenu",
                     "type": "Button",
-                    "id": "48bc6605-d5f4-443c-a8aa-6f544d080689",
+                    "id": "7c79fdea-c0d6-4b31-87cc-b132950069b3",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -143,12 +143,12 @@
                 },
                 {
                     "name": "",
-                    "id": "be3d8caa-2b99-4639-aa8b-7784cd5564d1",
-                    "path": "<Keyboard>/a",
+                    "id": "a1d8cf94-8f85-400b-89dd-aff0bf1c55b7",
+                    "path": "<Keyboard>/c",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "SwitchChar",
+                    "action": "Cook",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

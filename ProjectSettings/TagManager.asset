@@ -6,6 +6,7 @@ TagManager:
   tags:
   - NPC
   - Object
+  - Cook
   layers:
   - Default
   - TransparentFX
