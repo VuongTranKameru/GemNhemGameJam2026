@@ -9,9 +9,7 @@ public class MainPlayerController : MonoBehaviour
     [Header("Rig")]
     [SerializeField] Rigidbody2D rigging;
     [SerializeField] InputCharacterManager inputManager;
-    Action<InputAction.CallbackContext> cookStarted, cookPressed;
     [SerializeField] Animator animator;
-
     Vector2 lastDirection = Vector2.down;
     float inputX, inputY;
 
