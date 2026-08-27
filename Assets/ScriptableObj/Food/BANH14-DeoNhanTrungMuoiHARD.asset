@@ -10,14 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6447ec091f8b6e04abaf9eadd75a1853, type: 3}
-  m_Name: BANH03-DaLon
+  m_Name: BANH14-DeoNhanTrungMuoiHARD
   m_EditorClassIdentifier: 
-  nameIng: "B\xE1nh da l\u1EE3n"
+  nameIng: "B\xE1nh d\u1EBBo nh\xE2n tr\u1EE9ng mu\u1ED1i"
   picIng: {fileID: -1866229178, guid: 26719139de3f76349b8c599e5a4777a4, type: 3}
   listOfIngredient:
-  - {fileID: 11400000, guid: 942aae6e5a28c9641a089a647aaf594b, type: 2}
-  - {fileID: 11400000, guid: 15e371879ca4bb24fbf7bcc31eec5184, type: 2}
-  - {fileID: 11400000, guid: 2f3db559abb0cb942abb179ecaf8fb58, type: 2}
   - {fileID: 11400000, guid: 150939772d9527440a255c533ed8158f, type: 2}
-  - {fileID: 11400000, guid: 6529f201a774ad14a91855d93639c1f6, type: 2}
-  - {fileID: 11400000, guid: 91cc1ddfa2de3e44e9e15ce06e4fd5b5, type: 2}
+  - {fileID: 11400000, guid: dde12a2cd7e25944ba40a306a66a9bba, type: 2}
+  - {fileID: 11400000, guid: 11be9ee08056a284fb9e594a8366229a, type: 2}
+  - {fileID: 11400000, guid: c1a4cb9a7cb199341be3843ecb39906b, type: 2}

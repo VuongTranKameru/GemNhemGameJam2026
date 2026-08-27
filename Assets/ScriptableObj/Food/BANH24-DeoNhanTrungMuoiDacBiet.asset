@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6447ec091f8b6e04abaf9eadd75a1853, type: 3}
-  m_Name: BANH04-DeoNhanTrungMuoi
+  m_Name: BANH24-DeoNhanTrungMuoiDacBiet
   m_EditorClassIdentifier: 
-  nameIng: "B\xE1nh d\u1EBBo nh\xE2n tr\u1EE9ng mu\u1ED1i"
+  nameIng: "B\xE1nh d\u1EBBo nh\xE2n tr\u1EE9ng mu\u1ED1i \u0111\u1EB7c bi\u1EC7t"
   picIng: {fileID: -1866229178, guid: 26719139de3f76349b8c599e5a4777a4, type: 3}
   listOfIngredient:
-  - {fileID: 11400000, guid: 8c440219c2a984c4abb64ecf12755490, type: 2}
-  - {fileID: 11400000, guid: aa5fc4dbcc944de48a033dfddba6e2c2, type: 2}
-  - {fileID: 11400000, guid: 150939772d9527440a255c533ed8158f, type: 2}
+  - {fileID: 11400000, guid: cd0778b46c50dd341be4aba4a12637b0, type: 2}
+  - {fileID: 11400000, guid: dde12a2cd7e25944ba40a306a66a9bba, type: 2}
   - {fileID: 11400000, guid: 11be9ee08056a284fb9e594a8366229a, type: 2}
+  - {fileID: 11400000, guid: c1a4cb9a7cb199341be3843ecb39906b, type: 2}
