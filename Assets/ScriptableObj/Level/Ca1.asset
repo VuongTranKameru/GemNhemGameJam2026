@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   workTime: 10
   foodOrderList:
-  - {fileID: 11400000, guid: cd5272cb7256d2a40b79af57e8658c62, type: 2}
+  - food: {fileID: 11400000, guid: cd5272cb7256d2a40b79af57e8658c62, type: 2}
+    time: 8
+  - food: {fileID: 11400000, guid: cd5272cb7256d2a40b79af57e8658c62, type: 2}
+    time: 5
