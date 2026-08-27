@@ -10,10 +10,9 @@ public class ItemHolded : MonoBehaviour
     [Header("Visual")]
     [SerializeField] SpriteRenderer spriteI;
 
-    public SOIngredientConfig TakeIngredient {
-        get => ingredient;
-        set => ingredient = value;
-    }
+    public SOIngredientConfig TakeIngredient { get => ingredient; }
+
+    public SOIngredientConfig SetFoodPlacement { set => ingredient = value; }
     
     public Sprite ItemSprite { 
         set {
