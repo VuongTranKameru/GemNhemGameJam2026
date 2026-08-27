@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18c5d3e584ae4ce4f9f1f8f45ad83ec0, type: 3}
   m_Name: ING14-Chanh
   m_EditorClassIdentifier: 
-  nameIng: "N\u01B0\u1EDBc c\u1ED1t chanh"
-  picIng: {fileID: -1060266922, guid: 26719139de3f76349b8c599e5a4777a4, type: 3}
+  nameIng: Chanh
+  picIng: {fileID: 31140933, guid: 4ba60b00b905fec48a4fea178b67a92f, type: 3}
