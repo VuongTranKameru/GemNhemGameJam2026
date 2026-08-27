@@ -17,7 +17,7 @@ public class ClockInShiftTrigger : MonoBehaviour
         if (player.CompareTag("Player"))
             if (player.GetComponentInParent<InputCharacterManager>().PlayerInput.Interact.IsPressed())
             {
-                shiftMane.SetPlayerInShift = true;
+                shiftMane.IsPlayerInShift = true;
                 GetComponent<ClockInShiftTrigger>().enabled = false;
             }
     }

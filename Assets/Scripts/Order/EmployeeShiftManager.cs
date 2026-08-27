@@ -16,8 +16,12 @@ public class EmployeeShiftManager : MonoBehaviour
     [SerializeField] TMP_Text countdownTxt;
     [SerializeField] GameObject gameOverScreen;
 
+    public float GetWorkTime { get => Mathf.FloorToInt(workTime); }
     public float SetWorkTime { set => workTime = value; }
-    public bool SetPlayerInShift { set => isTimeRunning = true; }
+    public bool IsPlayerInShift {
+        get => isTimeRunning;
+        set => isTimeRunning = true; 
+    }
 
     private void Awake()
     {

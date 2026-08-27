@@ -9,7 +9,7 @@ public class PlacementOfItem : MonoBehaviour
     private void Start()
     {
         if (playerHolder == null)
-            playerHolder = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<ItemHolded>();
+            playerHolder = FindAnyObjectByType<InputCharacterManager>().GetComponentInChildren<ItemHolded>();
     }
 
     protected void InsertFoodIntoPlayerHand(SOIngredientConfig config)

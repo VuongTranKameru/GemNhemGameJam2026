@@ -12,6 +12,7 @@ public class DialogueManager : MonoBehaviour
     [Header("Dialogue UI")]
     [SerializeField] GameObject panel;
     [SerializeField] TMP_Text txtDialg, nameChar;
+    [SerializeField] Image avaChar;
     [SerializeField] float speedTxt;
     bool isDoneALine;
     int countLine;
@@ -27,8 +28,8 @@ public class DialogueManager : MonoBehaviour
             charLines = value;
             isEndDialog = false;
             SetUpTheFrame(true);
-            panel.GetComponentInChildren<Selectable>().Select();
-            FindAnyObjectByType<EventSystem>().firstSelectedGameObject = panel.GetComponentInChildren<Selectable>().gameObject;
+            panel.GetComponent<Selectable>().Select();
+            FindAnyObjectByType<EventSystem>().firstSelectedGameObject = panel.GetComponent<Selectable>().gameObject;
             SpeakOutTheLine();
         }
     }
@@ -82,6 +83,13 @@ public class DialogueManager : MonoBehaviour
         txtDialg.text = "";
         txtDialg.text = charLines[countLine].line;
         txtDialg.maxVisibleCharacters = 0;
+        if (charLines[countLine].ava != null)
+        {
+            avaChar.sprite = charLines[countLine].ava;
+            if (!avaChar.gameObject.activeInHierarchy)
+                avaChar.gameObject.SetActive(true);
+        }
+        else avaChar.gameObject.SetActive(false);
 
         foreach (char letter in charLines[countLine].line.ToCharArray())
         {   
@@ -98,6 +106,7 @@ public class DialogueManager : MonoBehaviour
     {
         isEndDialog = true;
         panel.SetActive(false);
+        avaChar.gameObject.SetActive(false);
     }
     #endregion
 }

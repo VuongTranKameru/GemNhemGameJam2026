@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShipPlacementManager : PlacementOfItem
 {
     [Header("Shipping Order Manager")]
+    [SerializeField] GameManager gameMane;
     List<SOFoodConfig> foodOrdersInDay = new();
     bool isNewFoodWrapped;
 
@@ -12,13 +13,13 @@ public class ShipPlacementManager : PlacementOfItem
     [SerializeField] ItemHolded[] wrappedFoodSlots;
     int countSlot, countOrder;
 
-    public List<SOFoodConfig> SetFoodOrders
+    public SOFoodConfig SetFoodOrder
     {
         set
         {
             if (foodOrdersInDay == null)
                 foodOrdersInDay = new();
-            foodOrdersInDay = value;
+            foodOrdersInDay.Add(value);
         }
     }
 
@@ -28,6 +29,9 @@ public class ShipPlacementManager : PlacementOfItem
     {
         if (foodOrdersInDay == null)
             foodOrdersInDay = new();
+
+        if (gameMane == null)
+            gameMane = FindAnyObjectByType<GameManager>();
 
         if (wrappedFoodSlots == null)
             Debug.LogWarning("--Remember to put the slot in!--");
@@ -68,11 +72,10 @@ public class ShipPlacementManager : PlacementOfItem
                 for (countOrder = foodOrdersInDay.Count - 1; countOrder >= 0; countOrder --)
                     if (CheckOrderIfCorrect( (SOFoodConfig)wrappedFoodSlots[countSlot].TakeIngredient, foodOrdersInDay[countOrder] ))
                     {
-                        Debug.Log("done");
+                        gameMane.FinishOrder(foodOrdersInDay[countOrder]);
                         foodOrdersInDay.RemoveAt(countOrder);
                         slot.ItemSprite = null;
                         slot.SetFoodPlacement = null;
-                        wrappedFoodSlots[countSlot] = null;
                         break;
                     }
                 countSlot--;
