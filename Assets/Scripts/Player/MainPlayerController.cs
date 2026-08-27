@@ -9,6 +9,10 @@ public class MainPlayerController : MonoBehaviour
     [Header("Rig")]
     [SerializeField] Rigidbody2D rigging;
     [SerializeField] InputCharacterManager inputManager;
+    Action<InputAction.CallbackContext> cookStarted, cookPressed;
+    [SerializeField] Animator animator;
+
+    Vector2 lastDirection = Vector2.down;
     float inputX, inputY;
 
     [Header("Interact")]
@@ -28,6 +32,7 @@ public class MainPlayerController : MonoBehaviour
     void Update()
     {
         TopdownMovement();
+        UpdateAnimation();
     }
 
     #region Outside ref
@@ -69,6 +74,30 @@ public class MainPlayerController : MonoBehaviour
     #endregion
 
     #region Animation
+    void UpdateAnimation()
+    {
+        Vector2 movement = new Vector2(inputX, inputY);
+
+        // Speed của player
+        float currentSpeed = movement.magnitude;
+
+        animator.SetFloat("speed", currentSpeed);
+
+        // Đang di chuyển
+        if (currentSpeed > 0.01f)
+        {
+            // Hướng di chuyển hiện tại
+            animator.SetFloat("MoveX", movement.x);
+            animator.SetFloat("MoveY", movement.y);
+
+            // Lưu hướng cuối cùng
+            lastDirection = movement.normalized;
+
+            animator.SetFloat("LastX", lastDirection.x);
+            animator.SetFloat("LastY", lastDirection.y);
+        }
+    }
+
     void FacingInteract()
     {
         if (inputY == 1)
@@ -84,6 +113,7 @@ public class MainPlayerController : MonoBehaviour
     void CookDelegateHandler()
     {
         inputManager.PlayerInput.Cook.canceled += context => CookingAnim(Color.white);
+
         cookStarted = context => CookingAnim(Color.magenta);
         cookPressed = context => CookingAnim(Color.white);
     }
@@ -92,5 +122,6 @@ public class MainPlayerController : MonoBehaviour
     {
         GetComponent<SpriteRenderer>().color = co;
     }
+
     #endregion
 }
