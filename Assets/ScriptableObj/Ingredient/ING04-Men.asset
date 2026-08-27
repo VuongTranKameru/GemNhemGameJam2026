@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: ING04-Men
   m_EditorClassIdentifier: 
   nameIng: Men
-  picIng: {fileID: -1060266922, guid: 26719139de3f76349b8c599e5a4777a4, type: 3}
+  picIng: {fileID: -1064284401, guid: e4a00d958f1a1b149ab420a0c0bd3802, type: 3}

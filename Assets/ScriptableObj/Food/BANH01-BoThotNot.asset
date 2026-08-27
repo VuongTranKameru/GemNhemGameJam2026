@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BANH01-BoThotNot
   m_EditorClassIdentifier: 
   nameIng: "B\xE1nh b\xF2 th\u1ED1t n\u1ED1t"
-  picIng: {fileID: -1866229178, guid: 26719139de3f76349b8c599e5a4777a4, type: 3}
+  picIng: {fileID: 21300000, guid: 50978bcd86a4073439dc77b42b4deee2, type: 3}
   listOfIngredient:
   - {fileID: 11400000, guid: 15e371879ca4bb24fbf7bcc31eec5184, type: 2}
   - {fileID: 11400000, guid: 942aae6e5a28c9641a089a647aaf594b, type: 2}
