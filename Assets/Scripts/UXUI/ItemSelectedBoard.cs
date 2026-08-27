@@ -1,18 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ItemSelectedBoard : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [Header("UI")]
+    [SerializeField] GameObject checkPanel;
+    [SerializeField] GameObject selectPanel;
+    [SerializeField] TMP_Text txtChecked, txtSelected;
+
+    private void Awake()
     {
-        
+        if (checkPanel.activeInHierarchy || selectPanel.activeInHierarchy)
+        {
+            checkPanel.SetActive(false);
+            selectPanel.SetActive(false);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void EnabledShowIngredientInBox(SOIngredientConfig ing, bool enabled)
     {
-        
+        txtChecked.text = ing.nameIng;
+        checkPanel.SetActive(enabled);
+    }
+
+    public void EnabledShowItemHoldByPlayer(SOIngredientConfig ing, bool enabled)
+    {
+        if (ing != null)
+            txtSelected.text = ing.nameIng;
+        selectPanel.SetActive(enabled);
     }
 }

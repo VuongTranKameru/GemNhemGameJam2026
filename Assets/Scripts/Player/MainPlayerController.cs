@@ -8,10 +8,13 @@ public class MainPlayerController : MonoBehaviour
 {
     [Header("Rig")]
     [SerializeField] Rigidbody2D rigging;
-    [SerializeField] GameObject interactCollider, holdItem, itemPrefab;
     [SerializeField] InputCharacterManager inputManager;
-    Action<InputAction.CallbackContext> cookStarted, cookPressed;
     float inputX, inputY;
+
+    [Header("Interact")]
+    [SerializeField] GameObject interactCollider;
+    [SerializeField] GameObject holdItem, itemPrefab;
+    Action<InputAction.CallbackContext> cookStarted, cookPressed;
 
     [Header("Stats")]
     [SerializeField] float speed;

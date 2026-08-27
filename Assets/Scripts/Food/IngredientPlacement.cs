@@ -6,6 +6,8 @@ public class IngredientPlacement : PlacementOfItem
 {
     [SerializeField] SOIngredientConfig ingredient;
 
+    public SOIngredientConfig IsThisIngredient { get => ingredient; }
+
     private void OnTriggerStay2D(Collider2D player)
     {
         if (player.CompareTag("Player") && player.GetComponentInParent<InputCharacterManager>().PlayerInput.Interact.IsPressed())

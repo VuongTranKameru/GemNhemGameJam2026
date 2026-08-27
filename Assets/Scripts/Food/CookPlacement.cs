@@ -76,8 +76,5 @@ public class CookPlacement : PlacementOfItem
         for (countRecipe = exclusionRecipe.Count - 1; countRecipe >= 0; countRecipe--)
             if (exclusionRecipe[countRecipe].listOfIngredient[countIng] != ing)
                 exclusionRecipe.RemoveAt(countRecipe);
-
-        foreach (SOFoodConfig cookbook in exclusionRecipe)
-            Debug.Log(cookbook + " " + exclusionRecipe.Count);
     }
 }
