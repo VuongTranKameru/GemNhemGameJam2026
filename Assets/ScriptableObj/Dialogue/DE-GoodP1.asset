@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a7d9ca2067ceab4caee39e8cfe17d30, type: 3}
+  m_Name: DE-GoodP1
+  m_EditorClassIdentifier: 
+  type: 0
+  nameDialogue: Good Ending
+  isUsedOnce: 0
+  lockThisDialogue: 0
+  dialogueLines:
+  - character: "B\xE0 Qu\xFDt"
+    line: "Ch\xE1u y\xEAu\u2026"
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "Ch\xE1u l\xE0m vi\u1EC7c v\u1EA5t v\u1EA3 qu\xE1, l\u1EA7n sau nh\u1EDB
+      ngh\u1EC9 ng\u01A1i gi\u1EEF s\u1EE9c kho\u1EBB nghen."
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "B\xE0 c\u1EE9 ngh\u0129 r\u1EB1ng s\u1EBD kh\xF4ng c\xF3 ai d\xF9ng t\u1EDBi
+      l\u1ECD n\u01B0\u1EDBc \u0111\u01B0\u1EDDng hoa b\u01B0\u1EDFi \u1EA5y n\u1EEFa."
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "B\xE0 c\u1EE9 ti\u1EBFc m\xE3i, d\xF9 sao \u0111\xF3 c\u0169ng l\xE0 m\xF9a
+      hoa b\u01B0\u1EDFi cu\u1ED1i c\xF9ng c\u1EE7a b\xE0."
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "Nhi\u1EC1u l\xFAc b\xE0 th\u1EA5y th\u1EB1ng Qu\xE2n gh\xE9c l\u1EAFm
+      \xE1."
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "N\xF3 k\u1EBF nghi\u1EC7p b\xE0, qu\xE1n to\xE0n l\xE0 kh\xE1ch quen,
+      nhi\u1EC1u ng\u01B0\u1EDDi c\xF2n b\u1EBF n\xF3 t\u1EEB th\u1EDDi n\xF3 c\xF2n
+      tru\u1ED5ng c\u1EDDi t\u1EAFm m\u01B0a."
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "V\u1EADy m\xE0 th\u1EB1ng nh\u1ECF c\u1EE9 b\u1ECF ba c\xE1i \u0111\u1ED3
+      g\xEC \u0111\xE2u v\xE0o trong b\xE1nh,..."
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "...l\xE0m \u0103n ng\xE0y c\xE0ng ch\u1ED9p gi\u1EF1t, h\u01B0 h\u1EBFt
+      c\u1EA3 b\u1ED9t c\u1EA3 \u0111\u01B0\u1EDDng."
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "Kh\xE1ch c\u0169 b\u1ECF \u0111i h\u1EBFt."
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "B\xE0 gh\xE9t qu\xE1, nhi\u1EC1u l\xFAc nh\xECn mu\u1ED1n cho d\u1EB9p
+      ti\u1EC7m."
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "C\xF3 m\u1EA5y h\xF4m b\xE0 x\xFAi kh\xE1ch t\u1EDBi thi\u1EC7t nhi\u1EC1u
+      \u0111\u1EB7ng cho qu\xE1n s\u1EADp lu\xF4n,..."
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "...khi\u1EBFn c\xE1c ch\xE1u l\xE0m l\u1EE5ng v\u1EA5t v\u1EA3 qu\xE1
+      r\u1ED3i."
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "...khi\u1EBFn c\xE1c ch\xE1u l\xE0m l\u1EE5ng v\u1EA5t v\u1EA3 qu\xE1
+      r\u1ED3i."
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "H\xF4m nay l\xFAc th\u1EA5y c\xF3 ng\u01B0\u1EDDi \u0111\u1ECBnh d\xF9ng
+      h\u0169 hoa b\u01B0\u1EDFi, n\xF3i thi\u1EC7t b\xE0 c\u0169ng kh\xF4ng \u01B0ng
+      c\xE1i b\u1EE5ng."
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "Gi\u1EDD b\xE0 m\u1EDBi nh\u1EADn ra,..."
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "...b\xE0 v\u1EABn \u0111ang mong th\u1EB1ng Qu\xE2n t\u1EF1 m\u1EDF t\u1EF1
+      d\xF9ng c\xE1i h\u0169 \u1EA5y."
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "...b\xE0 v\u1EABn \u0111ang mong th\u1EB1ng Qu\xE2n t\u1EF1 m\u1EDF t\u1EF1
+      d\xF9ng c\xE1i h\u0169 \u1EA5y."
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "B\xE0 mu\u1ED1n \u0111\u1EC3 d\xE0nh cho n\xF3."
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "B\xE0 v\u1EABn mong n\xF3 quay l\u1EA1i nh\xECn b\xE0, nh\xECn nh\u1EEFng
+      th\u1EE9 c\u0169 trong c\xE1i qu\xE1n n\xE0y th\xEAm m\u1ED9t l\u1EA7n."
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "Nh\u01B0ng nh\xECn v\u1EBB m\u1EB7t c\u1EE5 Ho\xE0n l\xFAc \u0103n b\xE1nh
+      ch\xE1u l\xE0m, b\xE0 bi\u1EBFt l\xE0 \xF4ng \u1EA5y \u01B0ng c\xE1i b\xE1nh
+      d\u1EEF l\u1EAFm."
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "\u0110\xE3 r\u1EA5t l\xE2u r\u1ED3i b\xE0 m\u1EDBi nh\xECn th\u1EA5y v\u1EBB
+      m\u1EB7t \u1EA5y \u1EDF m\u1ED9t kh\xE1ch h\xE0ng gh\xE9 qu\xE1n n\xE0y,..."
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "...v\xE0 c\u0169ng b\u1EB1ng \u1EA5y th\u1EDDi gian r\u1ED3i b\xE0 ch\u01B0a
+      c\xF3 c\u1EA3m gi\xE1c vui th\u1EBF n\xE0y."
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "Th\u1EBF b\xE0 m\u1EDBi nh\u1EADn ra c\xF4ng s\u1EE9c c\u1EE7a m\u1ED9t
+      ng\u01B0\u1EDDi khi n\u1EA5u n\u01B0\u1EDBng, suy cho c\xF9ng v\u1EABn l\xE0
+      \u0111\u1EC3 ng\u01B0\u1EDDi \u0103n \u0111\u01B0\u1EE3c vui v\u1EA7y."
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "M\u1ED9t h\u0169 m\u1EADt \u0111\u1EC3 l\u1EA1i \u0111\xF3, cu\u1ED1i
+      c\xF9ng s\u1EBD ch\u1EB3ng ra \u0111\u01B0\u1EE3c m\xF3n ngon ng\u1ECDt g\xEC,
+      ph\xED ph\u1EA1m c\u1EE7a gi\u1EDDi l\u1EAFm ch\xE1u."
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "H\xF4m nay c\u1EA3m \u01A1n ch\xE1u nhi\u1EC1u l\u1EAFm."
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "Ch\u1EAFc l\xE0 t\u1EEB ng\xE0y mai b\xE0 s\u1EBD kh\xF4ng c\xF2n \u1EDF
+      \u0111\xE2y n\u1EEFa."
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "Ch\xE1u gi\xFAp b\xE0 g\u1EEDi ph\u1EA7n b\xE1nh c\xF2n l\u1EA1i cho Qu\xE2n
+      nh\xE9."
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "Gi\xFAp b\xE0 nh\u1EAFn n\xF3 l\xE0, l\xFAc n\xE0o b\xE0 c\u0169ng th\u01B0\u01A1ng
+      n\xF3 c\u1EA3."
+    ava: {fileID: 0}
+  - character: "B\xE0 Qu\xFDt"
+    line: "Nh\u01B0ng h\u01B0\u01A1ng v\u1ECB c\u1EE7a m\u1ED7i m\xF3n \u0103n l\xE0
+      do ng\u01B0\u1EDDi s\u1ED1ng vi\u1EBFt ti\u1EBFp, b\xE0 qu\u1EA3 th\u1EADt
+      kh\xF4ng \u1EDF b\xEAn n\xF3 th\xEAm \u0111\u01B0\u1EE3c n\u1EEFa."
+    ava: {fileID: 0}

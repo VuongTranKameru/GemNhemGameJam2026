@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a7d9ca2067ceab4caee39e8cfe17d30, type: 3}
+  m_Name: D2-NghiTrua
+  m_EditorClassIdentifier: 
+  type: 0
+  nameDialogue: "Gi\u1EDD ngh\u1EC9 tr\u01B0a"
+  isUsedOnce: 0
+  lockThisDialogue: 0
+  dialogueLines:
+  - character: "C\xF4 H\u01B0\u01A1ng"
+    line: "Ti\u1EC7m m\xECnh c\xF3 ai kh\xF4ng, c\xF4 giao nguy\xEAn li\u1EC7u n\xE0y."
+    ava: {fileID: 0}
+  - character: "C\xF4 H\u01B0\u01A1ng"
+    line: "\u1ED2, ch\xE1u tr\xF4ng l\u1EA1 th\u1EBF, l\u1EA1i m\u1EDBi v\xF4 l\xE0m
+      h\u1EA3?"
+    ava: {fileID: 0}
+  - character: MC
+    line: "V\xE2ng \u1EA1, ch\xE1u m\u1EDBi l\xE0m \u0111\u01B0\u1EE3c tu\u1EA7n
+      th\xF4i \u1EA1."
+    ava: {fileID: 0}
+  - character: MC
+    line: "C\xF4 H\u01B0\u01A1ng ph\u1EA3i kh\xF4ng \u1EA1? Ch\xE1u nghe anh Chung
+      nh\u1EAFc c\xF4 r\u1ED3i."
+    ava: {fileID: 0}
+  - character: MC
+    line: "C\xF4 v\xE0o \u0111\xE2y u\u1ED1ng mi\u1EBFng n\u01B0\u1EDBc cho \u0111\u1EE1
+      n\xF3ng \u0111\xE3 \u1EA1."
+    ava: {fileID: 0}
+  - character: "C\xF4 H\u01B0\u01A1ng"
+    line: "Nay ti\u1EC7m c\xF3 m\xECnh ch\xE1u l\xE0m th\xF4i h\u1EA3?"
+    ava: {fileID: 0}
+  - character: "C\xF4 H\u01B0\u01A1ng"
+    line: "V\u1EA5t v\u1EA3 qu\xE1."
+    ava: {fileID: 0}
+  - character: "C\xF4 H\u01B0\u01A1ng"
+    line: "H\u1ED3i x\u01B0a m\u1EA5y l\u1EA7n c\xF4 b\u1EA3o Qu\xE2n thu\xEA th\xEAm
+      ng\u01B0\u1EDDi \u0111i m\xE0 th\u1EB1ng nh\u1ECF kh\xF4ng c\xF3 ch\u1ECBu,
+      haiz."
+    ava: {fileID: 0}
+  - character: "C\xF4 H\u01B0\u01A1ng"
+    line: "H\u1ED3i x\u01B0a b\xE0 Qu\xFDt \u0111\xE2u c\xF3 nh\u01B0 th\u1EB1ng
+      n\xE0y, n\u1EABu h\u1EBFt c\u1EA3 ru\u1ED9t."
+    ava: {fileID: 0}
+  - character: MC
+    line: "B\xE0 Qu\xFDt l\xE0 ai th\u1EBF \u1EA1?"
+    ava: {fileID: 0}
+  - character: "C\xF4 H\u01B0\u01A1ng"
+    line: "Ch\u1EAFc ch\xE1u m\u1EDBi l\xE0m, ch\u01B0a c\xF3 bi\u1EBFt."
+    ava: {fileID: 0}
+  - character: "C\xF4 H\u01B0\u01A1ng"
+    line: "B\xE0 Qu\xFDt l\xE0 ch\u1EE7 c\u0169 ti\u1EC7m n\xE0y, b\xE0 n\u1ED9i
+      c\u1EE7a Qu\xE2n \u1EA5y."
+    ava: {fileID: 0}
+  - character: "C\xF4 H\u01B0\u01A1ng"
+    line: "M\xE0 b\xE0 c\u1EE5 m\u1EA5t r\u1ED3i, m\u1EDBi n\u0103m ngo\xE1i."
+    ava: {fileID: 0}
+  - character: "C\xF4 H\u01B0\u01A1ng"
+    line: "T\u1EEB h\u1ED3i \u0111\xF3 t\u1EDBi nay c\u1EEDa ti\u1EC7m n\xE0y thay
+      \u0111\u1ED5i kh\xF4ng bi\u1EBFt bao nhi\xEAu cho \u0111\u1EE7 lu\xF4n."
+    ava: {fileID: 0}
+  - character: "C\xF4 H\u01B0\u01A1ng"
+    line: "Kia k\xECa, Qu\xE2n n\xF3 l\u1EA1i l\u1EAFp th\xEAm m\u1EA5y qu\u1EA3
+      \u0111\xE8n nh\u1EA5p nh\xE1y ch\u1ED7 g\xF3c nh\xE0 v\u1EC7 sinh \u0111\xF3
+      h\u1EA3?"
+    ava: {fileID: 0}
+  - character: "C\xF4 H\u01B0\u01A1ng"
+    line: "H\u1ED3i \u1EA5y s\u1EBFp b\u1EA1n b\u1EA3o, \u201Cl\u1EAFp cho \u0111\u1EB9p\u201D."
+    ava: {fileID: 0}
+  - character: "C\xF4 H\u01B0\u01A1ng"
+    line: "B\xE0 Qu\xFDt gh\xEA g\u1EDBm, nh\u01B0ng m\xE0 b\xE0 th\u1EA3o l\u1EAFm."
+    ava: {fileID: 0}
+  - character: "C\xF4 H\u01B0\u01A1ng"
+    line: "Ch\u1EA3 ph\u1EA3i kh\xF4ng t\u1EF1 d\u01B0ng m\xE0 b\xE0 gi\u1EEF \u0111\u01B0\u1EE3c
+      h\xE0ng b\xE1nh m\u1EA5y ch\u1EE5c n\u0103m,"
+    ava: {fileID: 0}
+  - character: "C\xF4 H\u01B0\u01A1ng"
+    line: "t\u1EEB l\xFAc ti\u1EC7m n\xE0y v\u1EABn l\xE0 c\xE1i ch\xF2i \u1EDF m\xE9
+      ao,"
+    ava: {fileID: 0}
+  - character: "C\xF4 H\u01B0\u01A1ng"
+    line: "cho \u0111\u1EBFn khi khang trang chuy\u1EC3n qua \u0111\u01B0\u1EDDng
+      ch\xEDnh."
+    ava: {fileID: 0}
+  - character: "C\xF4 H\u01B0\u01A1ng"
+    line: "C\xF2n Qu\xE2n \u1EEB th\xEC\u2026"
+    ava: {fileID: 0}
+  - character: 
+    line: "[C\xF4 H\u01B0\u01A1ng cho b\u1EA1n v\xE0i tr\xE1i th\u1ECB \u0111\u1EC3
+      qu\u1EA7y cho th\u01A1m, giao h\xE0ng xong li\u1EC1n r\u1EDDi \u0111i.]"
+    ava: {fileID: 0}

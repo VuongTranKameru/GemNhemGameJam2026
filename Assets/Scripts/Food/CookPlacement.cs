@@ -7,7 +7,7 @@ public class CookPlacement : PlacementOfItem
     [SerializeField] SOIngredientConfig trash;
 
     [Header("Food Recipe")]
-    [SerializeField] SOFoodConfig[] foodList;
+    [SerializeField] SOFoodConfig[] cookfoodList;
     List<SOIngredientConfig> ingredientAddIn;
     List<SOFoodConfig> exclusionRecipe;
     int countIng, countRecipe;
@@ -65,7 +65,7 @@ public class CookPlacement : PlacementOfItem
 
     void CheckFirstIngAndLengthOfRecipe()
     {
-        foreach (SOFoodConfig cookbook in foodList)
+        foreach (SOFoodConfig cookbook in cookfoodList)
             if (cookbook.listOfIngredient.Count == IsCountIngredient)
                 if (cookbook.listOfIngredient[0] == ingredientAddIn[0])
                     exclusionRecipe.Add(cookbook);
@@ -76,8 +76,5 @@ public class CookPlacement : PlacementOfItem
         for (countRecipe = exclusionRecipe.Count - 1; countRecipe >= 0; countRecipe--)
             if (exclusionRecipe[countRecipe].listOfIngredient[countIng] != ing)
                 exclusionRecipe.RemoveAt(countRecipe);
-
-        foreach (SOFoodConfig cookbook in exclusionRecipe)
-            Debug.Log(cookbook + " " + exclusionRecipe.Count);
     }
 }

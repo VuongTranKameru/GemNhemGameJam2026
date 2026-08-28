@@ -140,7 +140,7 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
             ],
             ""bindings"": [
                 {
-                    ""name"": ""2D Vector"",
+                    ""name"": ""Keyboard"",
                     ""id"": ""747ceb0e-4903-412a-addc-0b9e5284b210"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",

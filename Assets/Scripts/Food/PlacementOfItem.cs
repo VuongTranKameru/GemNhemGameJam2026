@@ -4,20 +4,19 @@ using UnityEngine;
 
 public class PlacementOfItem : MonoBehaviour
 {
-    [SerializeField] Sprite emptyItemTemp;
     [SerializeField] protected ItemHolded playerHolder;
 
     private void Start()
     {
         if (playerHolder == null)
-            playerHolder = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<ItemHolded>();
+            playerHolder = FindAnyObjectByType<InputCharacterManager>().GetComponentInChildren<ItemHolded>();
     }
 
     protected void InsertFoodIntoPlayerHand(SOIngredientConfig config)
     {
         if (!playerHolder.IsItemSpriteAvailable)
         {
-            playerHolder.TakeIngredient = config;
+            playerHolder.SetFoodPlacement = config;
             playerHolder.ItemSprite = config.picIng;
         }
     }
@@ -26,8 +25,8 @@ public class PlacementOfItem : MonoBehaviour
     {
         if (playerHolder.IsItemSpriteAvailable)
         {
-            playerHolder.TakeIngredient = null;
-            playerHolder.ItemSprite = emptyItemTemp;
+            playerHolder.SetFoodPlacement = null;
+            playerHolder.ItemSprite = null;
         }
     }
 }

@@ -13,6 +13,7 @@ public class CharacterLines
 {
     [SerializeField] internal string character;
     [SerializeField] internal string line;
+    [SerializeField] internal Sprite ava;
 }
 
 [CreateAssetMenu(fileName = "DialogueScriptData", menuName = "ScriptableObjects/DialogueLines")]
