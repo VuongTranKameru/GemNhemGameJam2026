@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CheckingOrder
 {
@@ -24,6 +25,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] EmployeeShiftManager shiftMane;
     [SerializeField] ShipPlacementManager orderMane;
     [SerializeField] CustomerOrderManager customerMane;
+    [SerializeField] GameObject specialRecipe;
+
+    [Header("Scenes")]
+    [SerializeField] UnityEvent winEvent;
+    [SerializeField] UnityEvent loseEvent;
 
     void Awake()
     {
@@ -34,6 +40,9 @@ public class GameManager : MonoBehaviour
             orderMane = FindAnyObjectByType<ShipPlacementManager>();
             customerMane = FindAnyObjectByType<CustomerOrderManager>();
         }
+
+        if (specialRecipe == null)
+            specialRecipe = GameObject.FindGameObjectWithTag("Finish");
 
         SettingLevel();
     }
@@ -52,10 +61,16 @@ public class GameManager : MonoBehaviour
     {
         shiftMane.SetWorkTime = levelSetting.workTime;
 
+        if (levelSetting.ActiveSpecialRecipe)
+            specialRecipe.SetActive(true);
+        else specialRecipe.SetActive(false);
+
         if (checkOrderList == null)
             checkOrderList = new();
         foreach (OrderTime orderSetting in levelSetting.foodOrderList)
             checkOrderList.Add(new CheckingOrder(orderSetting));
+
+        customerMane.CheckAmountOfMessagesInADay(checkOrderList.Count);
 
         countTime = 0;
     }
@@ -68,8 +83,10 @@ public class GameManager : MonoBehaviour
                 if (!checkOrderList[countTime].isPlaceAnOrder && !checkOrderList[countTime].isDone)
                 {
                     orderMane.SetFoodOrder = checkOrderList[countTime].foodOrder.food;
-                    customerMane.AddNewOrderIntoUiBar(levelSetting.foodOrderList[countTime].food);
+                    //customerMane.TakeNewOrderInPhone(levelSetting.foodOrderList[countTime].food);
+                    customerMane.TakeNewOrderAndAddIntoUiBar(levelSetting.foodOrderList[countTime].food);
                     checkOrderList[countTime].isPlaceAnOrder = true;
+                    orderMane.IsCheckNewOrderYet = true;
                     if (countTime < checkOrderList.Count - 1)
                         countTime++;
                 }
@@ -81,7 +98,7 @@ public class GameManager : MonoBehaviour
         foreach (CheckingOrder orders in checkOrderList)
             if (orders.foodOrder.food == doneOrder)
             {
-                customerMane.RemoveFinishedOrderInBar(orders.foodOrder.food);
+                customerMane.BlurryFinishedOrderInBar(orders.foodOrder.food, checkOrderList.Count);
                 orders.isDone = true;
                 break;
             }
@@ -94,8 +111,14 @@ public class GameManager : MonoBehaviour
         inputMane.GetComponentInChildren<MainPlayerController>().enabled = false;
         inputMane.PlayerInput.Disable();
         if (orderMane.IsOrderFinish <= 0)
-            Debug.Log("win");
-        else Debug.Log("lose");
+            StartCoroutine(DeteminatePlayerDestiny(winEvent));
+        else StartCoroutine(DeteminatePlayerDestiny(loseEvent));
+    }
+
+    IEnumerator DeteminatePlayerDestiny(UnityEvent e)
+    {
+        yield return new WaitForSeconds(3f);
+        e.Invoke();
     }
     #endregion
 }

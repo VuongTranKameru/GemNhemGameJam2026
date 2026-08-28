@@ -28,40 +28,40 @@ MonoBehaviour:
     ava: {fileID: 0}
   - character: "S\u1EBFp"
     line: "Alo T\xE2n \xE0, c\xE1i b\xE1nh h\xF4m n\u1ECD\u2026"
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp"
     line: "M\xE0 th\xF4i em kh\xF4ng c\u1EA7n n\xF3i g\xEC \u0111\xE2u."
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp"
     line: "Em gi\xFAp anh g\u1ECDi \u0111i\u1EC7n cho b\xE0 T\xE1m, c\xE1i m\u1ED1i
       b\xE1n h\xE0n the cho ti\u1EC7m m\xECnh \u1EA5y,..."
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp"
     line: "...hu\u1EF7 \u0111\u01A1n \u0111\xE3 \u0111\u1EB7t gi\xFAp anh."
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp"
     line: "B\u1EA3o b\xE0 \u1EA5y ti\u1EC1n anh \u0111\u1EC1n, h\xE0ng th\xEC ti\u1EC7m
       m\xECnh kh\xF4ng l\u1EA5y n\u1EEFa."
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp"
     line: "H\xF4m nay em kh\xF4ng c\u1EA7n l\xE0m, ngh\u1EC9 \u0111i nh\xE9."
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp"
     line: "Anh ph\u1EA3i s\u1EAFp x\u1EBFp l\u1EA1i v\xE0i th\u1EE9 \u0111\xE3."
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp"
     line: "\xC0 anh g\u1ECDi \u0111i\u1EC7n cho Chung r\u1ED3i."
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp"
     line: "H\xF4m n\xE0o ba anh em ng\u1ED3i l\u1EA1i, anh b\xE0n t\u0103ng l\u01B0\u01A1ng
       cho m\u1EA5y \u0111\u1EE9a\u2026"
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp"
     line: "C\xF2n n\u1EEFa\u2026"
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp"
     line: ...
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp"
     line: "C\u1EA3m \u01A1n em nh\xE9 T\xE2n."
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}

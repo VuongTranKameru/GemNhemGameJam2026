@@ -5,6 +5,7 @@ using UnityEngine;
 public class ClockInShiftTrigger : MonoBehaviour
 {
     [SerializeField] EmployeeShiftManager shiftMane;
+    [SerializeField] GameObject ost;
 
     void Start()
     {
@@ -16,9 +17,13 @@ public class ClockInShiftTrigger : MonoBehaviour
     {
         if (player.CompareTag("Player"))
             if (player.GetComponentInParent<InputCharacterManager>().PlayerInput.Interact.IsPressed())
-            {
-                shiftMane.IsPlayerInShift = true;
-                GetComponent<ClockInShiftTrigger>().enabled = false;
-            }
+                AutomaticInShift();
+    }
+
+    public void AutomaticInShift()
+    {
+        shiftMane.IsPlayerInShift = true;
+        ost.SetActive(true);
+        GetComponent<ClockInShiftTrigger>().enabled = false;
     }
 }

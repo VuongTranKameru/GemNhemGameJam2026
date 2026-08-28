@@ -24,7 +24,7 @@ MonoBehaviour:
     line: "V\xE2ng \u1EA1. Con t\xECm \u0111\u01B0\u1EE3c vi\u1EC7c m\u1EDBi r\u1ED3i,
       b\xE1c cho con kh\u1EA5t t\u1EDBi cu\u1ED1i tu\u1EA7n v\u1EDBi \u1EA1. Con
       c\u1EA3m \u01A1n."
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: d4671a2e6ee25ee4ebdb564a3e71e815, type: 3}
   - character: 
     line: "[Nh\xF3m chat c\xF4ng vi\u1EC7c ti\u1EC7m b\xE1nh Ba M\xECn]"
     ava: {fileID: 0}
@@ -34,11 +34,11 @@ MonoBehaviour:
   - character: "S\u1EBFp Qu\xE2n [ng\u01B0\u1EDDi d\u1EABn \u0111\u01B0\u1EDDng]"
     line: "\u01A0 th\u1EBF m\xE0y \u0111\u1EC3 ti\u1EC7m l\u1EA1i cho m\u1ED9t m\xECnh
       th\u1EB1ng T\xE2n tr\xF4ng \xE0?"
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp Qu\xE2n [ng\u01B0\u1EDDi d\u1EABn \u0111\u01B0\u1EDDng]"
     line: "N\xF3 m\u1EDBi h\u1ECDc vi\u1EC7c \u0111\u01B0\u1EE3c c\xF3 tu\u1EA7n
       th\xF4i \u0111\u1EA5y."
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "Chung [nv ch\xEDnh th\u1EE9c]"
     line: "Ch\u1ECBu, em h\u1EBFt \u0111\xE1t r\u1ED3i, s\u1EBFp t\u1EF1 x\u1EED
       \u0111i."
@@ -48,7 +48,7 @@ MonoBehaviour:
     ava: {fileID: 0}
   - character: "S\u1EBFp Qu\xE2n [ng\u01B0\u1EDDi d\u1EABn \u0111\u01B0\u1EDDng]"
     line: "M\xE1 n\xF3 ch\u1EE9 &(@\u201C>*#*=!!!!"
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: 
     line: "[B\u1EA1n c\xF3 cu\u1ED9c g\u1ECDi \u0111\u1EBFn]"
     ava: {fileID: 0}
@@ -57,57 +57,57 @@ MonoBehaviour:
     ava: {fileID: 0}
   - character: "S\u1EBFp:"
     line: "Alo T\xE2n \xE0, \u0111\u1ECDc tin trong nh\xF3m ch\u01B0a? t\u1EDBi nh\xE9."
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp:"
     line: "Anh \u0111ang \u0111i du l\u1ECBch Ha Oai r\u1ED3i kh\xF4ng v\u1EC1 tr\xF4ng
       ti\u1EC7m \u0111\u01B0\u1EE3c."
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp:"
     line: "M\xE0y t\u1EF1 tr\xF4ng ti\u1EC7m m\u1EA5y ng\xE0y t\u1EDBi nh\xE9."
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp:"
     line: "M\xE0y c\u1EE9 m\u1EDF S\u1ED5 c\xF4ng th\u1EE9c ra, s\u1ED5 \u0111\u1EA5y
       n\xF3 b\u1EA3o g\xEC m\xE0y l\xE0m theo n\u1EA5y, n\xF3 n\xF3i cho c\xE1i g\xEC
       v\xE0o n\u1ED3i th\xEC m\xE0y cho c\xE1i n\u1EA5y l\xE0 \u0111\u01B0\u1EE3c."
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp:"
     line: "Nh\u01B0ng m\xE0y ph\u1EA3i l\xE0m \u0111\xFAng c\xF4ng th\u1EE9c cho
       anh!"
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp:"
     line: "Anh canh camera, anh m\xE0 th\u1EA5y m\xE0y th\xEAm b\u1EDBt c\xE1i g\xEC
       kh\xE1c trong c\xE1i S\u1ED5 \u0111\u1EA5y..."
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp:"
     line: "...th\xEC l\xFAc anh v\u1EC1 m\xE0y li\u1EC7u th\u1EA7n h\u1ED3n!"
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp:"
     line: "V\u1EDBi thi tho\u1EA3ng nh\u1EDB check \u0111i\u1EC7n tho\u1EA1i \u0111\u1EC3
       kh\xF4ng b\u1ECB l\u1EE1 \u0111\u01A1n c\u1EE7a kh\xE1ch. M\xE0y c\u1EE9 l\xE0m
       h\u1EBFt \u0111\u01A1n c\u1EE7a kh\xE1ch trong ng\xE0y l\xE0 ok."
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp:"
     line: "T\u01B0\u01A1i c\xE1i m\u1EB7t l\xEAn \u0111\u1EEBng c\xF3 b\xED x\u1ECB
       nh\u01B0 v\u1EADy! "
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp:"
     line: "M\u1EA5y c\xE1i vi\u1EC7c n\xE0y tr\xF4ng v\u1EADy nh\u01B0ng c\u0169ng
       ch\u1EA3 c\xF3 g\xEC kh\xF3 \u0111\xE2u."
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp:"
     line: "Ng\xE0y x\u01B0a th\u1EDDi c\xF2n sinh vi\xEAn nh\u01B0 m\xE0y \xE1, m\xECnh
       anh c\xE2n m\u1ED9t l\xFAc 4 ca nh\u01B0 n\xE0y c\xF2n \u0111\u01B0\u1EE3c."
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp:"
     line: "Ch\u1ECBu kh\xF3 l\xE0m \u0111i r\u1ED3i v\u1EC1 anh th\u0103ng cho m\xE0y
       l\xE0m nh\xE2n vi\xEAn ch\xEDnh th\u1EE9c, l\xE0m p\u1EDD r\xF4 d\u1EAFc leader
       lu\xF4n!"
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp:"
     line: "\xC0 m\xE0 \u0111\u1EEBng c\xF3 ti\u1EBFt ki\u1EC7m h\xE0n the nh\xE9,
       kh\xF4ng c\xF3 t\xED ho\xE1 ch\u1EA5t v\xE0o kh\xE1ch n\xF3 kh\xF4ng c\xF3
       \u01B0ng \u0111\xE2u."
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: 
     line: "[Cu\u1ED9c g\u1ECDi \u0111\xE3 k\u1EBFt th\xFAc]"
     ava: {fileID: 0}
@@ -131,7 +131,7 @@ MonoBehaviour:
     ava: {fileID: 0}
   - character: MC
     line: "K\xEC l\xE0 k\xEC th\u1EBF n\xE0o \u1EA5y \u1EA1?"
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: d4671a2e6ee25ee4ebdb564a3e71e815, type: 3}
   - character: Anh Chung
     line: ...
     ava: {fileID: 0}

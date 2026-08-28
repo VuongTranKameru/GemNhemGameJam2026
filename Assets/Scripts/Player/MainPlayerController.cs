@@ -18,6 +18,9 @@ public class MainPlayerController : MonoBehaviour
     [SerializeField] GameObject holdItem, itemPrefab;
     Action<InputAction.CallbackContext> cookStarted, cookPressed;
 
+    [Header("Sfx")]
+    [SerializeField] AudioSource doneCookingSfx;
+
     [Header("Stats")]
     [SerializeField] float speed;
     [SerializeField] float runSpd;
@@ -112,8 +115,8 @@ public class MainPlayerController : MonoBehaviour
     {
         inputManager.PlayerInput.Cook.canceled += context => CookingAnim(Color.white);
 
-        cookStarted = context => CookingAnim(Color.magenta);
-        cookPressed = context => CookingAnim(Color.white);
+        cookStarted = context => CookingAnim(Color.red);
+        cookPressed = context => FinishCookingAnim();
     }
 
     void CookingAnim(Color co)
@@ -121,5 +124,10 @@ public class MainPlayerController : MonoBehaviour
         GetComponent<SpriteRenderer>().color = co;
     }
 
+    void FinishCookingAnim()
+    {
+        doneCookingSfx.Play();
+        CookingAnim(Color.white);
+    }
     #endregion
 }

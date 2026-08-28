@@ -20,7 +20,6 @@ public class CutsceneDialogueController : MonoBehaviour
                 dialgMane.PutLinesOnFrame = dialogueScripts.NormalDialogueLines;
             else StartCoroutine(TimerDialogue());
         }
-
     }
 
     IEnumerator TimerDialogue()
