@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -20,6 +21,9 @@ public class DialogueManager : MonoBehaviour
     [Header("NPC Controller")]
     CharacterLines[] charLines;
     bool isEndDialog;
+
+    [Header("Scene")]
+    [SerializeField] UnityEvent changeSceneEvent;
 
     public CharacterLines[] PutLinesOnFrame
     {
@@ -107,6 +111,7 @@ public class DialogueManager : MonoBehaviour
         isEndDialog = true;
         panel.SetActive(false);
         avaChar.gameObject.SetActive(false);
+        changeSceneEvent.Invoke();
     }
     #endregion
 }

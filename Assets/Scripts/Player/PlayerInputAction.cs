@@ -127,15 +127,6 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": ""Hold"",
                     ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""OpenMenu"",
-                    ""type"": ""Button"",
-                    ""id"": ""7c79fdea-c0d6-4b31-87cc-b132950069b3"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -273,28 +264,6 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""a2515dc5-47d0-4556-92f0-7c33e1521184"",
-                    ""path"": ""<Keyboard>/enter"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""OpenMenu"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""bf20cfca-97d9-41ea-89ac-125f1f3c1778"",
-                    ""path"": ""<Keyboard>/tab"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""OpenMenu"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""97e10257-07e0-407d-8bb9-4b49345ef713"",
                     ""path"": ""<Keyboard>/shift"",
                     ""interactions"": """",
@@ -340,6 +309,33 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""OpenMenu"",
+                    ""type"": ""Button"",
+                    ""id"": ""ed6513b8-39c4-4fc0-8284-a55abf81c017"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""UpTab"",
+                    ""type"": ""Button"",
+                    ""id"": ""ef3c0b71-6a62-4663-aaf4-9d40b57d674f"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""DownTab"",
+                    ""type"": ""Button"",
+                    ""id"": ""a2eb8119-ef63-4d79-92b4-8f98719183e4"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -351,6 +347,50 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1b4379bb-3cf8-48df-b776-a5ca6dd3bcec"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""OpenMenu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""17f30b90-2033-4609-8e17-f41674952c2b"",
+                    ""path"": ""<Keyboard>/tab"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""OpenMenu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6b785d4d-414a-435e-86e9-f1f05dab99fc"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UpTab"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f2fd9540-e8ba-410d-b6b3-c3e9e56643b4"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DownTab"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -742,10 +782,12 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         m_Main_Run = m_Main.FindAction("Run", throwIfNotFound: true);
         m_Main_Interact = m_Main.FindAction("Interact", throwIfNotFound: true);
         m_Main_Cook = m_Main.FindAction("Cook", throwIfNotFound: true);
-        m_Main_OpenMenu = m_Main.FindAction("OpenMenu", throwIfNotFound: true);
         // General
         m_General = asset.FindActionMap("General", throwIfNotFound: true);
         m_General_Pause = m_General.FindAction("Pause", throwIfNotFound: true);
+        m_General_OpenMenu = m_General.FindAction("OpenMenu", throwIfNotFound: true);
+        m_General_UpTab = m_General.FindAction("UpTab", throwIfNotFound: true);
+        m_General_DownTab = m_General.FindAction("DownTab", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Point = m_UI.FindAction("Point", throwIfNotFound: true);
@@ -842,7 +884,6 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
     private readonly InputAction m_Main_Run;
     private readonly InputAction m_Main_Interact;
     private readonly InputAction m_Main_Cook;
-    private readonly InputAction m_Main_OpenMenu;
     /// <summary>
     /// Provides access to input actions defined in input action map "Main".
     /// </summary>
@@ -870,10 +911,6 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Main/Cook".
         /// </summary>
         public InputAction @Cook => m_Wrapper.m_Main_Cook;
-        /// <summary>
-        /// Provides access to the underlying input action "Main/OpenMenu".
-        /// </summary>
-        public InputAction @OpenMenu => m_Wrapper.m_Main_OpenMenu;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -912,9 +949,6 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
             @Cook.started += instance.OnCook;
             @Cook.performed += instance.OnCook;
             @Cook.canceled += instance.OnCook;
-            @OpenMenu.started += instance.OnOpenMenu;
-            @OpenMenu.performed += instance.OnOpenMenu;
-            @OpenMenu.canceled += instance.OnOpenMenu;
         }
 
         /// <summary>
@@ -938,9 +972,6 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
             @Cook.started -= instance.OnCook;
             @Cook.performed -= instance.OnCook;
             @Cook.canceled -= instance.OnCook;
-            @OpenMenu.started -= instance.OnOpenMenu;
-            @OpenMenu.performed -= instance.OnOpenMenu;
-            @OpenMenu.canceled -= instance.OnOpenMenu;
         }
 
         /// <summary>
@@ -979,6 +1010,9 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_General;
     private List<IGeneralActions> m_GeneralActionsCallbackInterfaces = new List<IGeneralActions>();
     private readonly InputAction m_General_Pause;
+    private readonly InputAction m_General_OpenMenu;
+    private readonly InputAction m_General_UpTab;
+    private readonly InputAction m_General_DownTab;
     /// <summary>
     /// Provides access to input actions defined in input action map "General".
     /// </summary>
@@ -994,6 +1028,18 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "General/Pause".
         /// </summary>
         public InputAction @Pause => m_Wrapper.m_General_Pause;
+        /// <summary>
+        /// Provides access to the underlying input action "General/OpenMenu".
+        /// </summary>
+        public InputAction @OpenMenu => m_Wrapper.m_General_OpenMenu;
+        /// <summary>
+        /// Provides access to the underlying input action "General/UpTab".
+        /// </summary>
+        public InputAction @UpTab => m_Wrapper.m_General_UpTab;
+        /// <summary>
+        /// Provides access to the underlying input action "General/DownTab".
+        /// </summary>
+        public InputAction @DownTab => m_Wrapper.m_General_DownTab;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1023,6 +1069,15 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
             @Pause.started += instance.OnPause;
             @Pause.performed += instance.OnPause;
             @Pause.canceled += instance.OnPause;
+            @OpenMenu.started += instance.OnOpenMenu;
+            @OpenMenu.performed += instance.OnOpenMenu;
+            @OpenMenu.canceled += instance.OnOpenMenu;
+            @UpTab.started += instance.OnUpTab;
+            @UpTab.performed += instance.OnUpTab;
+            @UpTab.canceled += instance.OnUpTab;
+            @DownTab.started += instance.OnDownTab;
+            @DownTab.performed += instance.OnDownTab;
+            @DownTab.canceled += instance.OnDownTab;
         }
 
         /// <summary>
@@ -1037,6 +1092,15 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
             @Pause.started -= instance.OnPause;
             @Pause.performed -= instance.OnPause;
             @Pause.canceled -= instance.OnPause;
+            @OpenMenu.started -= instance.OnOpenMenu;
+            @OpenMenu.performed -= instance.OnOpenMenu;
+            @OpenMenu.canceled -= instance.OnOpenMenu;
+            @UpTab.started -= instance.OnUpTab;
+            @UpTab.performed -= instance.OnUpTab;
+            @UpTab.canceled -= instance.OnUpTab;
+            @DownTab.started -= instance.OnDownTab;
+            @DownTab.performed -= instance.OnDownTab;
+            @DownTab.canceled -= instance.OnDownTab;
         }
 
         /// <summary>
@@ -1278,13 +1342,6 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnCook(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "OpenMenu" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnOpenMenu(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "General" which allows adding and removing callbacks.
@@ -1300,6 +1357,27 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnPause(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "OpenMenu" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnOpenMenu(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "UpTab" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnUpTab(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "DownTab" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnDownTab(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "UI" which allows adding and removing callbacks.

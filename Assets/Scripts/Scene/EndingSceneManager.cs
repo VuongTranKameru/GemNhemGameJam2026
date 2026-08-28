@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class EndingSceneManager : MonoBehaviour
 {
@@ -27,6 +29,8 @@ public class EndingSceneManager : MonoBehaviour
         if (isStartTalking)
             if (!dialogPanel.activeInHierarchy)
             {
+                endingTxt.GetComponent<Selectable>().Select();
+                FindAnyObjectByType<EventSystem>().firstSelectedGameObject = endingTxt.gameObject;
                 endingTxt.SetActive(true);
                 isStartTalking = false;
             }

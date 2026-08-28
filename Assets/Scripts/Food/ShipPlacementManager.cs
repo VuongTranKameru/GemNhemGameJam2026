@@ -7,11 +7,11 @@ public class ShipPlacementManager : PlacementOfItem
     [Header("Shipping Order Manager")]
     [SerializeField] GameManager gameMane;
     List<SOFoodConfig> foodOrdersInDay = new();
-    bool isNewFoodWrapped;
+    bool isNewFoodWrapped; //key to check order, remember
 
     [Header("Food")]
     [SerializeField] ItemHolded[] wrappedFoodSlots;
-    int countSlot, countOrder;
+    int countOrder;
 
     public SOFoodConfig SetFoodOrder
     {
@@ -23,6 +23,7 @@ public class ShipPlacementManager : PlacementOfItem
         }
     }
 
+    public bool IsCheckNewOrderYet { set => isNewFoodWrapped = value; }
     public int IsOrderFinish { get => foodOrdersInDay.Count; }
 
     private void Awake()
@@ -49,7 +50,7 @@ public class ShipPlacementManager : PlacementOfItem
                 foreach (ItemHolded order in wrappedFoodSlots)
                     if (order.TakeIngredient == null)
                     {
-                        InsertOrderOnTable(wrappedFoodSlots[0], playerHolder.IsFoodAvailable());
+                        InsertOrderOnTable(order, playerHolder.IsFoodAvailable());
                         RemoveFoodOutOfHand();
                         break;
                     }
@@ -66,11 +67,10 @@ public class ShipPlacementManager : PlacementOfItem
     {
         if (isNewFoodWrapped)
         {
-            countSlot = wrappedFoodSlots.Length - 1;
             foreach (ItemHolded slot in wrappedFoodSlots)
             {
                 for (countOrder = foodOrdersInDay.Count - 1; countOrder >= 0; countOrder --)
-                    if (CheckOrderIfCorrect( (SOFoodConfig)wrappedFoodSlots[countSlot].TakeIngredient, foodOrdersInDay[countOrder] ))
+                    if (CheckOrderIfCorrect( (SOFoodConfig)slot.TakeIngredient, foodOrdersInDay[countOrder] ))
                     {
                         gameMane.FinishOrder(foodOrdersInDay[countOrder]);
                         foodOrdersInDay.RemoveAt(countOrder);
@@ -78,7 +78,6 @@ public class ShipPlacementManager : PlacementOfItem
                         slot.SetFoodPlacement = null;
                         break;
                     }
-                countSlot--;
             }
             isNewFoodWrapped = false;
         }

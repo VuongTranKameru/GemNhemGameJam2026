@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a7d9ca2067ceab4caee39e8cfe17d30, type: 3}
+  m_Name: D3-KhachKhoTinhP1
+  m_EditorClassIdentifier: 
+  type: 0
+  nameDialogue: "Kh\xE1ch kh\xF3 t\xEDnh"
+  isUsedOnce: 0
+  lockThisDialogue: 0
+  dialogueLines:
+  - character: "\xD4ng Ho\xE0n"
+    line: "Ch\xE1u \u01A1i b\xE1n \xF4ng c\xE1i b\xE1nh d\u1EBBo."
+    ava: {fileID: 21300000, guid: c0f7d7e479cb131478f965de533f26f5, type: 3}
+  - character: MC
+    line: "V\xE2ng \u1EA1, qu\xE1n ch\xE1u c\xF3 b\xE1nh d\u1EBBo nh\xE2n \u0111\u1EADu
+      xanh tr\u1EE9ng mu\u1ED1\u2026"
+    ava: {fileID: 21300000, guid: d4671a2e6ee25ee4ebdb564a3e71e815, type: 3}
+  - character: "\xD4ng Ho\xE0n"
+    line: "Bi\u1EBFt r\u1ED3i, \xF4ng ch\u1EA3 \u0103n \u1EDF \u0111\xE2y t\u1EEB
+      h\u1ED3i m\xE0y c\xF2n ch\u01B0a \u0111\u1EBB \u1EA5y."
+    ava: {fileID: 21300000, guid: c0f7d7e479cb131478f965de533f26f5, type: 3}
+  - character: "\xD4ng Ho\xE0n"
+    line: "M\xE0 c\u0169ng l\xE2u l\u1EAFm r\u1ED3i kh\xF4ng gh\xE9,.."
+    ava: {fileID: 21300000, guid: c0f7d7e479cb131478f965de533f26f5, type: 3}
+  - character: "\xD4ng Ho\xE0n"
+    line: "..h\xF4m nay c\xF3 d\u1ECBp v\u1EC1 ch\u01A1i v\u1EDBi ch\xE1u \u0111\xEDt
+      nh\xF4m \xF4ng m\u1EDBi t\u1EA1t qua ch\u1ED7 n\xE0y mua b\xE1nh."
+    ava: {fileID: 21300000, guid: c0f7d7e479cb131478f965de533f26f5, type: 3}
+  - character: "\xD4ng Ho\xE0n"
+    line: "N\xEAn l\xE0 cho \xF4ng \u0111\xFAng nh\u01B0 v\u1ECB c\u0169 nh\xE9!"
+    ava: {fileID: 21300000, guid: c0f7d7e479cb131478f965de533f26f5, type: 3}
+  - character: "\xD4ng Ho\xE0n"
+    line: "Ch\u1EDD l\xE2u c\u0169ng \u0111\u01B0\u1EE3c nh\u01B0ng nh\u1EA5t \u0111\u1ECBnh
+      ph\u1EA3i l\u1EA5y lo\u1EA1i truy\u1EC1n th\u1ED1ng cho \xF4ng."
+    ava: {fileID: 21300000, guid: c0f7d7e479cb131478f965de533f26f5, type: 3}

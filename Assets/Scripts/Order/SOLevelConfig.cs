@@ -14,4 +14,7 @@ public class SOLevelConfig : ScriptableObject
 {
     [SerializeField] internal float workTime;
     [SerializeField] internal List<OrderTime> foodOrderList;
+    [SerializeField] bool isSpecialRecipe;
+
+    public bool ActiveSpecialRecipe {  get => isSpecialRecipe; }
 }

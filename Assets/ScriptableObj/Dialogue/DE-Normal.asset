@@ -20,31 +20,31 @@ MonoBehaviour:
   - character: "S\u1EBFp"
     line: "Hmm, T\xE2n l\xE0m gi\u1ECFi \u0111\u1EA5y ch\u1EE9, x\u1EED l\xFD \u0111\xE2u
       ra \u0111\xF3."
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp"
     line: "Gi\u1EDD anh s\u1EBD tuy\u1EC3n T\xE2n l\xE0m nh\xE2n vi\xEAn ch\xEDnh
       th\u1EE9c."
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp"
     line: "Nh\u01B0ng h\u1EE3p \u0111\u1ED3ng m\xECnh ch\u01B0a k\xED v\u1ED9i."
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp"
     line: "Hi\u1EC7n t\u1EA1i anh \u0111\u1EC3 l\u01B0\u01A1ng c\u1EE7a T\xE2n l\xE0
       12k/h,..."
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp"
     line: "...sau n\xE0y em l\xE0m quen vi\u1EC7c r\u1ED3i th\xEC m\xECnh t\xEDnh
       ti\u1EBFp chuy\u1EC7n h\u1EE3p \u0111\u1ED3ng, n\xE2ng l\u01B0\u01A1ng v\u1EDBi
       b\u1EA3o hi\u1EC3m nh\xE9."
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp"
     line: "Em c\u1EE9 y\xEAn t\xE2m."
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp"
     line: "V\xE0i th\xE1ng n\u1EEFa anh tuy\u1EC3n th\xEAm ng\u01B0\u1EDDi, s\u1EBD
       cho em l\xE0m c\u1EEDa h\xE0ng tr\u01B0\u1EDFng."
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
   - character: "S\u1EBFp"
     line: "Em c\u1ED1 g\u1EAFng giai \u0111o\u1EA1n n\xE0y, m\xECnh c\xF2n tr\u1EBB,
       n\u1ED7 l\u1EF1c!"
-    ava: {fileID: 0}
+    ava: {fileID: 21300000, guid: ffe74f6d14b0dee44a3a914ae316af83, type: 3}
