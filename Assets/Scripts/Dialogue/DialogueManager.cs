@@ -46,10 +46,10 @@ public class DialogueManager : MonoBehaviour
 
     private void Awake()
     {
-        if (instance == null)
+        /*if (instance == null)
             instance = this;
         else if (instance != this)
-            Destroy(gameObject);
+            Destroy(gameObject);*/
     }
 
     #region Input from DialogueChar and EventTrigger

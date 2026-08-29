@@ -16,13 +16,13 @@ public class CheckingOrder
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] SOLevelConfig levelSetting;
-    List<CheckingOrder> checkOrderList;
+    [SerializeField] protected SOLevelConfig levelSetting;
+    protected List<CheckingOrder> checkOrderList;
     int countTime;
 
     [Header("Managers")]
     [SerializeField] InputCharacterManager inputMane;
-    [SerializeField] EmployeeShiftManager shiftMane;
+    [SerializeField] protected EmployeeShiftManager shiftMane;
     [SerializeField] ShipPlacementManager orderMane;
     [SerializeField] CustomerOrderManager customerMane;
     [SerializeField] GameObject specialRecipe;
@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
     }
 
     #region Level Setup
-    void SettingLevel()
+    protected void SettingLevel()
     {
         shiftMane.SetWorkTime = levelSetting.workTime;
 
@@ -106,7 +106,7 @@ public class GameManager : MonoBehaviour
     #endregion
 
     #region Player Data Setting
-    void GameOverThePlayer()
+    protected virtual void GameOverThePlayer()
     {
         inputMane.GetComponentInChildren<MainPlayerController>().enabled = false;
         inputMane.PlayerInput.Disable();

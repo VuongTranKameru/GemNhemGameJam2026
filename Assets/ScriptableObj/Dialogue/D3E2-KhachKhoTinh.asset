@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a7d9ca2067ceab4caee39e8cfe17d30, type: 3}
+  m_Name: D3E2-KhachKhoTinh
+  m_EditorClassIdentifier: 
+  type: 1
+  nameDialogue: HM2
+  isUsedOnce: 0
+  lockThisDialogue: 0
+  dialogueLines:
+  - character: "\xD4ng Ho\xE0n"
+    line: "\u2026"
+    ava: {fileID: 21300000, guid: c0f7d7e479cb131478f965de533f26f5, type: 3}
+  - character: "\xD4ng Ho\xE0n"
+    line: "C\xE1i v\u1ECB n\xE0y\u2026"
+    ava: {fileID: 21300000, guid: c0f7d7e479cb131478f965de533f26f5, type: 3}
+  - character: "\xD4ng Ho\xE0n"
+    line: "\u0110\xFAng l\xE0 c\xE1i v\u1ECB m\xE0 b\xE0 Qu\xFDt h\u1ED3i x\u01B0a
+      hay l\xE0m."
+    ava: {fileID: 21300000, guid: c0f7d7e479cb131478f965de533f26f5, type: 3}
+  - character: "\xD4ng Ho\xE0n"
+    line: "T\xF4i v\u1EABn nh\u1EDB nh\u1EEFng l\xFAc hoa b\u01B0\u1EDFi v\xE0o m\xF9a,
+      b\xE0 \u1EA5y chu\u1EA9n b\u1ECB t\u1EEB th\xE1ng hai, ng\xE2m \u0111\u01B0\u1EDDng
+      d\xF9ng d\u1EA7n t\u1EDBi cu\u1ED1i n\u0103m."
+    ava: {fileID: 21300000, guid: c0f7d7e479cb131478f965de533f26f5, type: 3}
+  - character: "\xD4ng Ho\xE0n"
+    line: "Hoa t\u1EF1 h\xE1i t\u1EF1 \u1EE7, kh\xF4ng d\xF9ng h\u01B0\u01A1ng li\u1EC7u."
+    ava: {fileID: 21300000, guid: c0f7d7e479cb131478f965de533f26f5, type: 3}
+  - character: "\xD4ng Ho\xE0n"
+    line: "B\xE1nh d\u1EBBo m\xE0 kh\xF4ng c\xF3 m\xF9i hoa b\u01B0\u1EDFi th\xEC
+      kh\xF4ng ph\u1EA3i b\xE1nh d\u1EBBo."
+    ava: {fileID: 21300000, guid: c0f7d7e479cb131478f965de533f26f5, type: 3}
+  - character: "\xD4ng Ho\xE0n"
+    line: "\xD4ng \u0111\u1EB7t th\xEAm ch\u1EE5c chi\u1EBFc n\xE0y \u0111\u1EC3
+      l\xE0m qu\xE0 bi\u1EBFu, mai l\u1EA5y nh\xE9."
+    ava: {fileID: 21300000, guid: c0f7d7e479cb131478f965de533f26f5, type: 3}
