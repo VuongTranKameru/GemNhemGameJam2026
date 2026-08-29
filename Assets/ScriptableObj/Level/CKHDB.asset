@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5c17173224acb994ea0d5fadcffe5484, type: 3}
-  m_Name: CKH
+  m_Name: CKHDB
   m_EditorClassIdentifier: 
   workTime: 180
   foodOrderList:
-  - food: {fileID: 11400000, guid: 7f94034020caa694eaba0582ae24e5e7, type: 2}
-    time: 180
-  isSpecialRecipe: 0
+  - food: {fileID: 11400000, guid: 567f48901563ea449943f327b735f3e5, type: 2}
+    time: 178
+  isSpecialRecipe: 1

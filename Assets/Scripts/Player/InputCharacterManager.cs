@@ -89,12 +89,7 @@ public class InputCharacterManager : MonoBehaviour
                 inputP.General.OpenMenu.Disable();
                 pause.gameObject.SetActive(true);
             }
-            else
-            {
-                inputP.Main.Enable();
-                inputP.General.OpenMenu.Enable();
-                pause.gameObject.SetActive(false);
-            }
+            else EnablePlayerInputAfterPause();
         }
     }
     #endregion
@@ -106,9 +101,11 @@ public class InputCharacterManager : MonoBehaviour
             inputP.Main.Disable();
     }
 
-    public void EnablePlayerInput()
+    public void EnablePlayerInputAfterPause()
     {
         inputP.Main.Enable();
+        inputP.General.OpenMenu.Enable();
+        pause.gameObject.SetActive(false);
     }
 
     public void DisablePlayerInput()

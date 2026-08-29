@@ -22,6 +22,7 @@ public class EmployeeShiftManager : MonoBehaviour
         get => isTimeRunning;
         set => isTimeRunning = true; 
     }
+    public bool TurnOffIsGameOver { set => isGameOver = value; }
 
     private void Awake()
     {

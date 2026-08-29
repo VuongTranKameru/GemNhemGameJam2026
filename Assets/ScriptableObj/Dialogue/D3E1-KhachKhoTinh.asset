@@ -10,17 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a7d9ca2067ceab4caee39e8cfe17d30, type: 3}
-  m_Name: D3-KhachKhoTinhP2
+  m_Name: D3E1-KhachKhoTinh
   m_EditorClassIdentifier: 
   type: 1
-  nameDialogue: "C\xF3 b\xE1n cho kh\xE1ch kh\xF3 t\xEDnh?"
+  nameDialogue: HM2
   isUsedOnce: 0
   lockThisDialogue: 0
   dialogueLines:
   - character: "\xD4ng Ho\xE0n"
-    line: "\xD4ng \u0103n t\u1EEB th\u1EDDi \u201Cm\xE0y m\u1EDBi \u0111\u1EBB\u201D
-      th\xEC ch\xE1u n\xE0o m\xE0 bi\u1EBFt \u0111\u01B0\u1EE3c \u201Cv\u1ECB c\u0169\u201D
-      c\u1EE7a \xF4ng l\xE0 v\u1ECB ch\u0103ng v\u1ECB sao th\u1EBF n\xE0o?! Kh\xE1ch
-      n\xE0y c\xF3 v\u1EBB kh\xE1 kh\xF3 t\xEDnh, b\u1EA1n c\xF3 mu\u1ED1n nh\u1EADn
-      \u0111\u01A1n kh\xF4ng?"
+    line: "\u1EEA, b\xE1nh d\u1EBBo, nh\u01B0ng kh\xF4ng ph\u1EA3i v\u1ECB ng\xE0y
+      x\u01B0a."
+    ava: {fileID: 21300000, guid: c0f7d7e479cb131478f965de533f26f5, type: 3}
+  - character: "\xD4ng Ho\xE0n"
+    line: "Qu\xE1n n\xE0y c\u0169ng \u0111\u1ED5i c\xF4ng th\u1EE9c r\u1ED3i, th\xF4i
+      v\u1EADy."
     ava: {fileID: 21300000, guid: c0f7d7e479cb131478f965de533f26f5, type: 3}

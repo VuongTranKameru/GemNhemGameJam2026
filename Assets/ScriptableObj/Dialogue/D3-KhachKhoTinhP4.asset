@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a7d9ca2067ceab4caee39e8cfe17d30, type: 3}
+  m_Name: D3-KhachKhoTinhP4
+  m_EditorClassIdentifier: 
+  type: 1
+  nameDialogue: HM2
+  isUsedOnce: 0
+  lockThisDialogue: 0
+  dialogueLines:
+  - character: 
+    line: "B\u1EA1n c\xF3 mu\u1ED1n s\u1EED d\u1EE5ng c\xF4ng th\u1EE9c m\u1EDBi
+      \u0111\u1EC3 l\xE0m b\xE1nh d\u1EBBo nh\xE2n \u0111\u1EADu xanh tr\u1EE9ng
+      mu\u1ED1i hay kh\xF4ng? H\xE3y NH\u1EDA r\u1EB1ng, quy \u0111\u1ECBnh c\u1EE7a
+      c\u1EEDa h\xE0ng KH\xD4NG CHO PH\xC9P b\u1EA1n \u0111\u1ED5i c\xF4ng th\u1EE9c
+      m\xF3n."
+    ava: {fileID: 21300000, guid: d4671a2e6ee25ee4ebdb564a3e71e815, type: 3}
