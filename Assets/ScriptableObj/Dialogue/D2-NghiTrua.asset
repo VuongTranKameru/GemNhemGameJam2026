@@ -24,15 +24,15 @@ MonoBehaviour:
     line: "\u1ED2, ch\xE1u tr\xF4ng l\u1EA1 th\u1EBF, l\u1EA1i m\u1EDBi v\xF4 l\xE0m
       h\u1EA3?"
     ava: {fileID: 21300000, guid: df2eef6ecf711f94988f7368d42df53f, type: 3}
-  - character: MC
+  - character: "T\xE2n"
     line: "V\xE2ng \u1EA1, ch\xE1u m\u1EDBi l\xE0m \u0111\u01B0\u1EE3c tu\u1EA7n
       th\xF4i \u1EA1."
     ava: {fileID: 21300000, guid: d4671a2e6ee25ee4ebdb564a3e71e815, type: 3}
-  - character: MC
+  - character: "T\xE2n"
     line: "C\xF4 H\u01B0\u01A1ng ph\u1EA3i kh\xF4ng \u1EA1? Ch\xE1u nghe anh Chung
       nh\u1EAFc c\xF4 r\u1ED3i."
     ava: {fileID: 21300000, guid: d4671a2e6ee25ee4ebdb564a3e71e815, type: 3}
-  - character: MC
+  - character: "T\xE2n"
     line: "C\xF4 v\xE0o \u0111\xE2y u\u1ED1ng mi\u1EBFng n\u01B0\u1EDBc cho \u0111\u1EE1
       n\xF3ng \u0111\xE3 \u1EA1."
     ava: {fileID: 21300000, guid: d4671a2e6ee25ee4ebdb564a3e71e815, type: 3}
@@ -51,7 +51,7 @@ MonoBehaviour:
     line: "H\u1ED3i x\u01B0a b\xE0 Qu\xFDt \u0111\xE2u c\xF3 nh\u01B0 th\u1EB1ng
       n\xE0y, n\u1EABu h\u1EBFt c\u1EA3 ru\u1ED9t."
     ava: {fileID: 21300000, guid: df2eef6ecf711f94988f7368d42df53f, type: 3}
-  - character: MC
+  - character: "T\xE2n"
     line: "B\xE0 Qu\xFDt l\xE0 ai th\u1EBF \u1EA1?"
     ava: {fileID: 21300000, guid: d4671a2e6ee25ee4ebdb564a3e71e815, type: 3}
   - character: "C\xF4 H\u01B0\u01A1ng"
