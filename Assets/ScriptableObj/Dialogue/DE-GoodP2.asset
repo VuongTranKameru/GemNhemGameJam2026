@@ -25,8 +25,8 @@ MonoBehaviour:
     line: "\u0110i\u1EC7n tho\u1EA1i hi\u1EC3n th\u1ECB s\u1EBFp v\u1EEBa \u0111\u0103ng
       post check in t\u1EA1i s\xE2n bay, n\u1EEDa ng\xE0y n\u1EEFa s\u1EBD v\u1EC1
       t\u1EDBi nh\xE0."
-    ava: {fileID: 21300000, guid: d4671a2e6ee25ee4ebdb564a3e71e815, type: 3}
+    ava: {fileID: 0}
   - character: 
     line: "B\u1EA1n g\u1EEDi ph\u1EA7n b\xE1nh d\u1EBBo \u0111\xE3 l\xE0m h\xF4m
       qua cho anh \u1EA5y."
-    ava: {fileID: 21300000, guid: d4671a2e6ee25ee4ebdb564a3e71e815, type: 3}
+    ava: {fileID: 0}

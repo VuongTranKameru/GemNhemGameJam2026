@@ -20,7 +20,7 @@ MonoBehaviour:
   - character: "B\xE1c Hoa ch\u1EE7 tr\u1ECD"
     line: "Th\xE1ng n\xE0y tr\u1EC5 ti\u1EC1n nh\xE0 r\u1ED3i nh\xE9."
     ava: {fileID: 0}
-  - character: MC
+  - character: "T\xE2n"
     line: "V\xE2ng \u1EA1. Con t\xECm \u0111\u01B0\u1EE3c vi\u1EC7c m\u1EDBi r\u1ED3i,
       b\xE1c cho con kh\u1EA5t t\u1EDBi cu\u1ED1i tu\u1EA7n v\u1EDBi \u1EA1. Con
       c\u1EA3m \u01A1n."
@@ -129,7 +129,7 @@ MonoBehaviour:
     line: "C\xF2n l\u1EE1 c\xF3 g\xEC k\xEC x\u1EA3y ra \u1EA5y th\xEC em c\u1EE9
       gi\u1EA3 l\u01A1 nha."
     ava: {fileID: 0}
-  - character: MC
+  - character: "T\xE2n"
     line: "K\xEC l\xE0 k\xEC th\u1EBF n\xE0o \u1EA5y \u1EA1?"
     ava: {fileID: 21300000, guid: d4671a2e6ee25ee4ebdb564a3e71e815, type: 3}
   - character: Anh Chung
