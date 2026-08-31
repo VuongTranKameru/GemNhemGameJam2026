@@ -18,7 +18,7 @@ MonoBehaviour:
     time: 298
   - food: {fileID: 11400000, guid: 1a8d2e5202f4b9d488796c14244cf1c3, type: 2}
     time: 255
-  - food: {fileID: 11400000, guid: b84064dc7fe108a4191341150a919266, type: 2}
+  - food: {fileID: 11400000, guid: 7f94034020caa694eaba0582ae24e5e7, type: 2}
     time: 189
   - food: {fileID: 11400000, guid: 24f21d0956054844a8a05a4a8aaef7dd, type: 2}
     time: 111

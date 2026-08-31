@@ -15,5 +15,5 @@ MonoBehaviour:
   workTime: 180
   foodOrderList:
   - food: {fileID: 11400000, guid: 567f48901563ea449943f327b735f3e5, type: 2}
-    time: 178
+    time: 179
   isSpecialRecipe: 1
