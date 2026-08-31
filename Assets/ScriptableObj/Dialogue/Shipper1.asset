@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Shipper1
   m_EditorClassIdentifier: 
   type: 1
-  nameDialogue: 
+  nameDialogue: Shipper easter egg
   isUsedOnce: 0
   lockThisDialogue: 0
   dialogueLines:
-  - character: Ship
+  - character: Shipper
     line: "Th\u1EA5y b\u1EA3o t\u01B0 b\u1EA3n qu\xE1n n\xE0y v\u1EAFt gh\xEA l\u1EAFm,
       h\xF4m n\xE0y t\xECn h\xECnh ch\u1ED7 nh\xF3c ra sao r\u1ED3i? [B\u1ECB b\u01A1]"
     ava: {fileID: 21300000, guid: 669c25bd3b909124bb37ef05273516b6, type: 3}

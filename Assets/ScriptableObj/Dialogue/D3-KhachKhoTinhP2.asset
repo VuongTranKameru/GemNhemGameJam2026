@@ -17,7 +17,7 @@ MonoBehaviour:
   isUsedOnce: 0
   lockThisDialogue: 0
   dialogueLines:
-  - character: "\xD4ng Ho\xE0n"
+  - character: 
     line: "\xD4ng \u0103n t\u1EEB th\u1EDDi \u201Cm\xE0y m\u1EDBi \u0111\u1EBB\u201D
       th\xEC ch\xE1u n\xE0o m\xE0 bi\u1EBFt \u0111\u01B0\u1EE3c \u201Cv\u1ECB c\u0169\u201D
       c\u1EE7a \xF4ng l\xE0 v\u1ECB ch\u0103ng v\u1ECB sao th\u1EBF n\xE0o?! Kh\xE1ch
