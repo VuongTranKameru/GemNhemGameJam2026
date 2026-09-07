@@ -21,14 +21,12 @@ public class InteractablePlayer : MonoBehaviour
             selectedBoard = FindAnyObjectByType<ItemSelectedBoard>();
     }
 
-    private void OnTriggerEnter2D(Collider2D obj)
-    {
-        if (obj.TryGetComponent(out item))
-            selectedBoard.EnabledShowIngredientInBox(item.IsThisIngredient, true);
-    }
-
     private void OnTriggerStay2D(Collider2D obj)
     {
+        if (!selectedBoard.IsInteractableTableCheck)
+            if (obj.TryGetComponent(out item))
+                selectedBoard.EnabledShowIngredientInBox(item.IsThisIngredient, true);
+
         if (obj.CompareTag("Cook") && obj.GetComponent<CookPlacement>().IsCountIngredient > 0)
         {
             playerSprite.EnableStartingCircleWhileCooking();

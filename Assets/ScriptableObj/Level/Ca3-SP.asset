@@ -15,11 +15,11 @@ MonoBehaviour:
   workTime: 360
   foodOrderList:
   - food: {fileID: 11400000, guid: 24f21d0956054844a8a05a4a8aaef7dd, type: 2}
-    time: 360
-  - food: {fileID: 11400000, guid: 30ef9e02e72cc3f46b7d67a51a3fed90, type: 2}
-    time: 289
+    time: 359
+  - food: {fileID: 11400000, guid: 1a8d2e5202f4b9d488796c14244cf1c3, type: 2}
+    time: 310
   - food: {fileID: 11400000, guid: 567f48901563ea449943f327b735f3e5, type: 2}
-    time: 167
+    time: 259
   - food: {fileID: 11400000, guid: 5e3171abedc71a44e8da462367c93200, type: 2}
-    time: 100
+    time: 111
   isSpecialRecipe: 1

@@ -96,7 +96,7 @@ public class GameManager : MonoBehaviour
     public void FinishOrder(SOFoodConfig doneOrder)
     {
         foreach (CheckingOrder orders in checkOrderList)
-            if (orders.foodOrder.food == doneOrder)
+            if (orders.foodOrder.food == doneOrder && !orders.isDone)
             {
                 customerMane.BlurryFinishedOrderInBar(orders.foodOrder.food, checkOrderList.Count);
                 orders.isDone = true;

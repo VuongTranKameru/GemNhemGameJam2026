@@ -12,12 +12,18 @@ public class CookPlacement : PlacementOfItem
     List<SOFoodConfig> exclusionRecipe;
     int countIng, countRecipe;
 
+    [Header("Item Selected Board")]
+    [SerializeField] ItemSelectedBoard selectedBoard;
+
     public int IsCountIngredient { get => ingredientAddIn.Count; }
 
     private void Awake()
     {
         ingredientAddIn = new();
         exclusionRecipe = new();
+
+        if (selectedBoard == null)
+            selectedBoard = FindAnyObjectByType<ItemSelectedBoard>();
     }
 
     private void OnTriggerStay2D(Collider2D obj)
@@ -43,6 +49,7 @@ public class CookPlacement : PlacementOfItem
     void AddNewIngIntoCook(ItemHolded item)
     {
         ingredientAddIn.Add(item.TakeIngredient);
+        selectedBoard.AddIngredientTag(item.TakeIngredient);
         RemoveFoodOutOfHand();
     }
 
@@ -61,6 +68,7 @@ public class CookPlacement : PlacementOfItem
 
         ingredientAddIn.Clear();
         exclusionRecipe.Clear();
+        selectedBoard.DeleteAllIngredientTag();
     }
 
     void CheckFirstIngAndLengthOfRecipe()

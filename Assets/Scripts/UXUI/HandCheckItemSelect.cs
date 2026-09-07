@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SelectedItemToBoard : MonoBehaviour
+public class HandCheckItemSelect : MonoBehaviour
 {
     [SerializeField] ItemHolded handPlayer;
     [SerializeField] ItemSelectedBoard selectedBoard;

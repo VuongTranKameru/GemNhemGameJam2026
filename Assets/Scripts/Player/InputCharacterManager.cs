@@ -88,6 +88,7 @@ public class InputCharacterManager : MonoBehaviour
                 inputP.Main.Disable();
                 inputP.General.OpenMenu.Disable();
                 pause.gameObject.SetActive(true);
+                Time.timeScale = 0;
             }
             else EnablePlayerInputAfterPause();
         }
@@ -101,11 +102,12 @@ public class InputCharacterManager : MonoBehaviour
             inputP.Main.Disable();
     }
 
-    public void EnablePlayerInputAfterPause()
+    public void EnablePlayerInputAfterPause() //also use in pause manager and some special unity event
     {
         inputP.Main.Enable();
         inputP.General.OpenMenu.Enable();
         pause.gameObject.SetActive(false);
+        Time.timeScale = 1;
     }
 
     public void DisablePlayerInput()
