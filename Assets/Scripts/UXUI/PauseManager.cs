@@ -12,6 +12,7 @@ public class PauseManager : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    #region Instruction UnityEvent
     public void EnableInstructionScene()
     {
         menuBeforeIntruct.SetActive(false);
@@ -23,4 +24,5 @@ public class PauseManager : MonoBehaviour
         menuBeforeIntruct.SetActive(true);
         SceneManager.UnloadSceneAsync("HowToPlay", UnloadSceneOptions.None);
     }
+    #endregion
 }

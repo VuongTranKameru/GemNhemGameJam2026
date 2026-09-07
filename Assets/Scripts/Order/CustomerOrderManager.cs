@@ -86,7 +86,7 @@ public class CustomerOrderManager : MonoBehaviour
     public void BlurryFinishedOrderInBar(SOFoodConfig food, int total)
     {
         foreach (NewMessageImg img in imageOrderList)
-            if (img.food == food)
+            if (img.food == food && img.rawObj.GetComponent<RawImage>().color != Color.gray)
             {
                 sfxDoneOrder.Play();
                 img.isChanged = true;

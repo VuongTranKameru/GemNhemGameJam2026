@@ -73,9 +73,9 @@ MonoBehaviour:
       \u0111\xE8n nh\u1EA5p nh\xE1y ch\u1ED7 g\xF3c nh\xE0 v\u1EC7 sinh \u0111\xF3
       h\u1EA3?"
     ava: {fileID: 21300000, guid: df2eef6ecf711f94988f7368d42df53f, type: 3}
-  - character: "C\xF4 H\u01B0\u01A1ng"
-    line: "H\u1ED3i \u1EA5y s\u1EBFp b\u1EA1n b\u1EA3o, \u201Cl\u1EAFp cho \u0111\u1EB9p\u201D."
-    ava: {fileID: 21300000, guid: df2eef6ecf711f94988f7368d42df53f, type: 3}
+  - character: 
+    line: "[H\u1ED3i \u1EA5y s\u1EBFp b\u1EA1n b\u1EA3o, \u201Cl\u1EAFp cho \u0111\u1EB9p\u201D.]"
+    ava: {fileID: 0}
   - character: "C\xF4 H\u01B0\u01A1ng"
     line: "B\xE0 Qu\xFDt gh\xEA g\u1EDBm, nh\u01B0ng m\xE0 b\xE0 th\u1EA3o l\u1EAFm."
     ava: {fileID: 21300000, guid: df2eef6ecf711f94988f7368d42df53f, type: 3}

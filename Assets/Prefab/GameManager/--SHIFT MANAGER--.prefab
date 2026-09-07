@@ -535,7 +535,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6243381671730701321
 RectTransform:
   m_ObjectHideFlags: 0
@@ -801,7 +801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.54901963, g: 0.33333334, b: 0.22352943, a: 1}
+  m_Color: {r: 0.94716984, g: 0.37545615, b: 0.08399426, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -840,7 +840,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.97735846, g: 0.56249833, b: 0.29320744, a: 1}
+    m_HighlightedColor: {r: 0.97735846, g: 0.108964436, b: 0, a: 1}
     m_PressedColor: {r: 0.50980395, g: 0.33333334, b: 0.039215688, a: 1}
     m_SelectedColor: {r: 0.9924528, g: 0.7791325, b: 0.64228547, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -862,6 +862,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InputCharacterManager, Assembly-CSharp
+        m_MethodName: EnablePlayerInputAfterPause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 6038464352590024149}
         m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
         m_MethodName: StartMenuScene
