@@ -7,6 +7,8 @@ public class ClockInShiftTrigger : MonoBehaviour
     [SerializeField] EmployeeShiftManager shiftMane;
     [SerializeField] GameObject ost;
 
+    public GameObject GetOST { get => ost; }
+
     void Start()
     {
         if (shiftMane == null)

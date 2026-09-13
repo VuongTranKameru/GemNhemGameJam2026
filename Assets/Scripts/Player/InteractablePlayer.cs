@@ -12,9 +12,6 @@ public class InteractablePlayer : MonoBehaviour
     [SerializeField] ItemSelectedBoard selectedBoard;
     IngredientPlacement item;
 
-    [Header("Dialogue Controller")]
-    bool isJustStartTalk;
-
     private void Start()
     {
         if (selectedBoard == null)
@@ -33,14 +30,6 @@ public class InteractablePlayer : MonoBehaviour
             if (input.PlayerInput.Cook.IsPressed())
                 playerSprite.EnableLoadingCircleWhileCooking();
         }
-
-        if (obj.CompareTag("NPC"))
-            if (!isJustStartTalk)
-                if (input.PlayerInput.Interact.IsPressed())
-                {
-                    input.IsTalkWithNpcRn = true;
-                    isJustStartTalk = true;
-                }
     }
 
     private void OnTriggerExit2D(Collider2D obj)
@@ -55,6 +44,5 @@ public class InteractablePlayer : MonoBehaviour
     public IEnumerator DelayABitAfterTheInteract()
     {
         yield return new WaitForSeconds(.2f);
-        isJustStartTalk = false;
     }
 }

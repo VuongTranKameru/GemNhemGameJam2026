@@ -4,9 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - NPC
   - Object
   - Cook
+  - XongCa
   layers:
   - Default
   - TransparentFX

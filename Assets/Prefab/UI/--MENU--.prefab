@@ -3246,8 +3246,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -143, y: -33}
-  m_SizeDelta: {x: 145, y: 27}
+  m_AnchoredPosition: {x: -100, y: -33}
+  m_SizeDelta: {x: 59.5802, y: 27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5113860659427874154
 CanvasRenderer:
@@ -3578,9 +3578,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "L\u1EDBp xanh: cho b\u1ED9t n\u0103ng, b\u1ED9t g\u1EA1o, n\u01B0\u1EDBc
     c\u1ED1t d\u1EEBa, \u0111\u01B0\u1EDDng, n\u01B0\u1EDBc l\xE1 d\u1EE9a, m\u1ED9t
-    ch\xFAt mu\u1ED1i v\xE0o khu\u1EA5y tan\nL\u1EA7n l\u01B0\u1EE3t h\u1EA5p m\u1ED9t
-    trong hai h\u1ED7n h\u1EE3p; l\u1EB7p l\u1EA1i cho \u0111\u1EBFn khi c\xF3 s\u1ED1
-    l\u1EDBp b\xE1nh \u01B0ng \xFD.\n"
+    ch\xFAt mu\u1ED1i v\xE0o khu\u1EA5y tan"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c051c590e6c7d8442bbfb83bdefe4e5a, type: 2}
   m_sharedMaterial: {fileID: -5504844090097336753, guid: c051c590e6c7d8442bbfb83bdefe4e5a, type: 2}
@@ -5638,8 +5636,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 80, y: -33}
-  m_SizeDelta: {x: 121, y: 27}
+  m_AnchoredPosition: {x: 55, y: -33}
+  m_SizeDelta: {x: 73, y: 27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8390924259875406739
 CanvasRenderer:
