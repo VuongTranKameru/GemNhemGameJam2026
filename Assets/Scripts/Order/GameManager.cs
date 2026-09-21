@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class CheckingOrder
 {
@@ -18,7 +19,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] protected SOLevelConfig levelSetting;
     protected List<CheckingOrder> checkOrderList;
-    int countTime;
+    int countTime, totalDoneOrders;
 
     [Header("Managers")]
     [SerializeField] InputCharacterManager inputMane;
@@ -26,6 +27,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] ShipPlacementManager orderMane;
     [SerializeField] CustomerOrderManager customerMane;
     [SerializeField] GameObject specialRecipe;
+    [SerializeField] Button dayDoneBtn;
 
     [Header("Scenes")]
     [SerializeField] UnityEvent winEvent;
@@ -43,6 +45,16 @@ public class GameManager : MonoBehaviour
 
         if (specialRecipe == null)
             specialRecipe = GameObject.FindGameObjectWithTag("Finish");
+
+        if (dayDoneBtn == null)
+        {
+            dayDoneBtn = GameObject.FindGameObjectWithTag("XongCa").GetComponent<Button>();
+            dayDoneBtn.onClick.AddListener (() => {
+                shiftMane.TurnOffIsGameOver = true;
+                GameOverThePlayer();
+            });
+            dayDoneBtn.gameObject.SetActive(false);
+        }
 
         SettingLevel();
     }
@@ -100,8 +112,12 @@ public class GameManager : MonoBehaviour
             {
                 customerMane.BlurryFinishedOrderInBar(orders.foodOrder.food, checkOrderList.Count);
                 orders.isDone = true;
+                totalDoneOrders++;
                 break;
             }
+
+        if (totalDoneOrders == checkOrderList.Count)
+            dayDoneBtn.gameObject.SetActive(true);
     }
     #endregion
 

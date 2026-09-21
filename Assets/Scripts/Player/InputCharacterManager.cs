@@ -58,7 +58,6 @@ public class InputCharacterManager : MonoBehaviour
     {
         OpenMenu();
         OpenPause();
-        StandStillWhileTalking();
     }
 
     #region Menu Input
@@ -96,10 +95,11 @@ public class InputCharacterManager : MonoBehaviour
     #endregion
 
     #region Outside Input
-    void StandStillWhileTalking()
+    public void PauseSubmenuDeactivePauseButton(bool check)
     {
-        if (isTalkwNPC && inputP.Main.Interact.IsPressed())
-            inputP.Main.Disable();
+        if (check)
+            inputP.General.Pause.Disable();
+        else inputP.General.Pause.Enable();
     }
 
     public void EnablePlayerInputAfterPause() //also use in pause manager and some special unity event
