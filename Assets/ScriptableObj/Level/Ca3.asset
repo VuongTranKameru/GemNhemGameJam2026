@@ -23,7 +23,7 @@ MonoBehaviour:
   - food: {fileID: 11400000, guid: 24f21d0956054844a8a05a4a8aaef7dd, type: 2}
     time: 257
   - food: {fileID: 11400000, guid: 5e3171abedc71a44e8da462367c93200, type: 2}
-    time: 167
+    time: 170
   - food: {fileID: 11400000, guid: 7f94034020caa694eaba0582ae24e5e7, type: 2}
     time: 100
   isSpecialRecipe: 0

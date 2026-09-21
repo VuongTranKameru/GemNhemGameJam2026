@@ -158,7 +158,6 @@ public class SettingManager : MonoBehaviour
 
     void ChangeResolution(int wit, int hei)
     {
-        Debug.Log("a");
         Screen.SetResolution(wit, hei, Screen.fullScreenMode);
     }
     #endregion

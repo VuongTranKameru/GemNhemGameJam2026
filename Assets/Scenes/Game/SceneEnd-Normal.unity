@@ -316,8 +316,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "CH\xDAC M\u1EEANG, B\u1EA0N V\u1EEAA C\xD3 VI\u1EC6C\nV\xC0 V\u1EEAA B\u1ECA
-    T\u01AF B\u1EA2N B\xC0O M\xC3I M\xC3I!"
+  m_text: "CH\xDAC M\u1EEANG, \nB\u1EA0N V\u1EEAA C\xD3 VI\u1EC6C\nV\xC0 V\u1EEAA
+    B\u1ECA T\u01AF B\u1EA2N B\xC0O M\xC3I M\xC3I!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c019b7de6ac8ab942ad04a6e0523b0f6, type: 2}
   m_sharedMaterial: {fileID: 8510364899462780357, guid: c019b7de6ac8ab942ad04a6e0523b0f6, type: 2}
